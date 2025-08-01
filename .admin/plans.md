@@ -9,3 +9,10 @@ Extend the engine to support human involvement. It should be extended in a way t
 ## Mechanics MCP Server
 
 Engine mechanics that are deteriministic and have set behaviors should be implemented with MCP tools rather than subagent processing. This way, we optimize token consumption and processing time. Write the mechanics MCP server in Go.
+
+## Derived Scenarios
+
+There should be a prompt that allows a scenario to be spawned from an existing scenario as:
+- a side adventure
+- a backstory
+- the next arc once the scenario concludes
