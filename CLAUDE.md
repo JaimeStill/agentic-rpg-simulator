@@ -69,7 +69,8 @@ next_event_setup:
 4. MECHANIC PHASE → Resolve actions via appropriate mechanics
 5. EVOLUTION PHASE → Update character/world states
 6. SAVE STATE → Generate next event package
-7. HANDOFF → Output complete state for next event
+7. LOG EVENT → Save detailed transcript (if store_event_logs enabled)
+8. HANDOFF → Output complete state for next event
 ```
 
 ## Event Types & Complexity
@@ -169,6 +170,35 @@ Process this event completely within context limits, then generate updated state
 **Event Focus**: [specific challenge/situation for this event]
 **Expected Complexity**: [low/medium/high]
 **Key Characters**: [who should be prominently featured]
+```
+
+## Event Logging System
+
+When `store_event_logs: true` is configured in the scenario, the system saves detailed event transcripts alongside compressed state files.
+
+### Log File Structure:
+- **Location**: `[adventure]/logs/event-[X].md` (or .yml/.json based on log_format)
+- **Content**: Complete event narrative including all character actions, mechanic resolutions, and outcomes
+- **Token Accounting**: Log generation does not count against event token budgets
+- **Detail Levels**:
+  - **Minimal**: Event summary, key outcomes, state changes
+  - **Standard**: Full event transcript with character actions and mechanics
+  - **Verbose**: Extended narrative with additional context and descriptions
+
+### Logging Workflow:
+1. Process event according to normal protocol (steps 1-6)
+2. If `store_event_logs: true`, generate detailed transcript
+3. Save transcript to `logs/event-[X].[format]`
+4. Continue with state handoff
+
+### Directory Structure (with logging):
+```
+[adventure-name]/
+├── characters/
+├── events/          # Compressed state files
+├── logs/           # Detailed event transcripts (optional)
+├── prompts/
+└── scenario.yml
 ```
 
 This system maintains narrative continuity while operating within strict context boundaries, with each event being a complete, self-contained experience that builds naturally from compressed state inputs.

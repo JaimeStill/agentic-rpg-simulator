@@ -57,6 +57,7 @@ agentic-rpg-simulator/
     ├── scenario.yml
     ├── characters/
     ├── events/
+    ├── logs/          # Event transcripts (optional)
     └── prompts/
 ```
 
@@ -78,6 +79,11 @@ agentic-rpg-simulator/
    Prompt: [adventure-name]/prompts/summarize-adventure.md
    ```
 
+4. **Read event transcripts** (if logging enabled):
+   ```
+   File: [adventure-name]/logs/event-[X].md
+   ```
+
 ## Key Features
 
 ### State Compression
@@ -97,6 +103,13 @@ From 5-event short stories to 20-event campaigns, across any genre:
 - Post-apocalyptic survival
 - Superhero team-ups
 - Cyberpunk heists
+
+### Event Logging
+Optional detailed event transcripts capture the full narrative experience:
+- Complete character actions and dialogue
+- Mechanic resolutions and outcomes  
+- Rich scene descriptions and atmosphere
+- Configurable detail levels and formats
 
 ### Mechanic Adaptability
 Combat, social, and exploration systems that learn from player patterns and adjust difficulty dynamically.
@@ -120,6 +133,7 @@ Or copy an existing scenario from `scenarios/` and modify:
 - Set event count (5-20)
 - Define theme and initial situation
 - Configure complexity distribution
+- Enable event logging with `store_event_logs: true`
 
 ## Advanced Usage
 

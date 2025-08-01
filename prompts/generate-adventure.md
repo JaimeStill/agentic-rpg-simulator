@@ -28,6 +28,7 @@ Initialize a new RPG adventure by creating all necessary artifacts and directory
      [adventure-name]/
      ├── characters/
      ├── events/
+     ├── logs/ (only if store_event_logs: true in scenario)
      ├── prompts/
      └── scenario.yml (copy of scenario configuration)
      ```
@@ -55,11 +56,22 @@ Initialize a new RPG adventure by creating all necessary artifacts and directory
    3. If states exist, continue from the latest event
    4. Process the event according to engine rules
    5. Save the new state to ../events/event-[X]-state.yml
+   6. Create full event transcript in ../logs/event-[X].[format] (if store_event_logs enabled)
    
    ## Adventure Context
    Theme: [theme]
    Scenario: [scenario]
    Current Event: [determined from state]
+   
+   ## Output Format
+   Each event should include:
+   - Event title and token budget
+   - Event setup with stakes
+   - Character actions phase (150 tokens per character)
+   - Mechanic resolution phase
+   - Evolution phase (character and world changes)
+   - Event summary
+   - Save compressed state (events/) and full transcript (logs/) if logging enabled
    ```
    
    ### summarize-adventure.md

@@ -123,6 +123,24 @@ properties:
     default: true
     description: "Whether game mechanics adapt to player patterns"
 
+  # Event Logging Configuration
+  store_event_logs:
+    type: boolean
+    default: false
+    description: "Whether to save detailed event transcripts in logs/ directory"
+    
+  log_format:
+    type: string
+    enum: ["markdown", "yaml", "json"]
+    default: "markdown"
+    description: "Format for event log files"
+    
+  log_detail_level:
+    type: string
+    enum: ["minimal", "standard", "verbose"]
+    default: "standard"
+    description: "Amount of detail included in event logs"
+
   # Optional Scenario-Specific Settings
   starting_heat:
     type: integer
