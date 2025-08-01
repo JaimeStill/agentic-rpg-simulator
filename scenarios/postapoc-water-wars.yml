@@ -1,0 +1,68 @@
+# Post-Apocalyptic Water Wars - Survival in the Wasteland
+# Fight for the most precious resource in a dead world
+
+# Core Parameters
+number_of_agents: 4 # Survivors: leader, scout, mechanic, medic
+number_of_events: 12 # Medium length for resource management arc
+theme: "Post-Apocalyptic" # Nuclear wasteland 50 years after the bombs
+scenario: "A dying trader whispers of the 'Aquifer' - a pre-war water purification facility still operational. With your settlement's well running dry, you must brave the wasteland, competing with the ruthless Water Barons and mutant tribes. But is the Aquifer salvation or a trap?"
+
+# Context Management
+max_event_tokens: 2000
+action_cost: 150
+mechanic_cost: 200
+description_budget: 300
+
+# Event Complexity Distribution
+complexity_mix:
+  low: 30% # Scavenging and travel
+  medium: 55% # Conflicts and survival challenges
+  high: 15% # Major battles and decisions
+
+# State Evolution Settings
+character_evolution_rate: "moderate" # Hardship changes people slowly
+world_persistence: "high" # Resources and reputation matter
+mechanic_learning: true # Enemies learn your tactics
+
+# Scenario-Specific Settings
+water_supplies: 20 # Days of water remaining
+radiation_level: "variable" # Different zones have different dangers
+faction_reputation:
+  settlements: 0 # Neutral start
+  water_barons: -20 # Natural enemies
+  mutants: -10 # Suspicious
+  scavengers: 0 # Opportunistic
+
+# Notable Elements
+wasteland_zones:
+  - "The Glass Desert" # Irradiated sand turned to glass
+  - "Rust Canyons" # Pre-war city ruins
+  - "The Green Line" # Toxic jungle reclaiming land
+  - "Salt Flats" # Former ocean bed
+  - "The Boneyard" # Mass grave battleground
+
+key_factions:
+  - "Water Barons" # Control most water sources
+  - "The Pure" # Anti-mutant zealots
+  - "Tunnel Rats" # Underground survivors
+  - "The Evolved" # Mutants embracing change
+  - "Lost Legion" # Military remnants
+
+survival_challenges:
+  - "Rad storms that force shelter"
+  - "Dehydration management"
+  - "Equipment degradation"
+  - "Trust vs resource conservation"
+  - "Moral choices: share or hoard?"
+
+aquifer_mysteries:
+  - "Why is it still operational?"
+  - "Who maintains it?"
+  - "What's the real cost of clean water?"
+  - "Connection to pre-war experiments?"
+
+# Generation Metadata
+generation_mode: "Curated"
+generation_date: "2025-08-01"
+scenario_author: "Event Conductor"
+difficulty_rating: "Hard"

@@ -1,0 +1,49 @@
+# Cyberpunk Neural Heist - High-Stakes Corporate Infiltration
+# A fast-paced heist adventure in a neon-lit dystopian future
+
+# Core Parameters
+number_of_agents: 4 # Heist crew: hacker, infiltrator, muscle, face
+number_of_events: 10 # Tight pacing for heist tension
+theme: "Cyberpunk" # Neon dystopia with corporate overlords
+scenario: "Elite crew hired to steal experimental neural implants from Nexus Corp's quantum-encrypted vault. The implants grant superhuman cognition but may have hidden purposes. Double-crosses expected."
+
+# Context Management
+max_event_tokens: 2000
+action_cost: 150
+mechanic_cost: 200
+description_budget: 300
+
+# Event Complexity Distribution
+complexity_mix:
+  low: 20% # Quick prep and escape scenes
+  medium: 50% # Core heist challenges
+  high: 30% # Major obstacles and betrayals
+
+# State Evolution Settings
+character_evolution_rate: "rapid" # Trust breaks and forms quickly
+world_persistence: "high" # Every action has consequences
+mechanic_learning: true # Security adapts to infiltration methods
+
+# Scenario-Specific Settings
+starting_heat: 0 # Corporate attention level
+max_heat: 10 # Point of no return
+betrayal_probability: "high" # Someone has their own agenda
+tech_level: "bleeding-edge" # Quantum encryption, neural interfaces, AR combat
+
+# Notable Elements
+key_locations:
+  - "The Grid" # Cyberspace layer for hacking
+  - "Nexus Spire" # 200-floor corporate arcology
+  - "Neon Underground" # Black market and safehouse network
+  
+potential_complications:
+  - "Rival crew attempting same heist"
+  - "AI security with learning algorithms"
+  - "Memory wipes from failed neural hacks"
+  - "Corporate mole in the team"
+
+# Generation Metadata
+generation_mode: "Curated"
+generation_date: "2025-08-01"
+scenario_author: "Event Conductor"
+difficulty_rating: "Veteran"
