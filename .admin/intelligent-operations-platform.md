@@ -5,6 +5,7 @@
 Modern systems require two fundamentally different types of processing capabilities.
 
 **Deterministic Processing** produces predictable, repeatable results from given inputs:
+
 - Mathematical calculations
 - Database operations
 - State transitions
@@ -12,6 +13,7 @@ Modern systems require two fundamentally different types of processing capabilit
 - Resource allocations
 
 **Non-Deterministic Processing** handles tasks requiring interpretation, creativity, or judgment:
+
 - Natural language understanding
 - Pattern recognition in unstructured data
 - Strategic decision making
@@ -25,11 +27,13 @@ These processing types require different approaches to implementation, testing, 
 ### Communication Protocols
 
 **Deterministic Systems** use structured protocols:
+
 - **MCP (Model Context Protocol)**: Tool-based interactions with defined schemas
 - **gRPC**: High-performance binary protocol for service-to-service communication
 - **HTTP/REST**: Standard web APIs for broad compatibility
 
 **Non-Deterministic Systems** use flexible protocols:
+
 - **Agent-to-Agent (A2A)**: Structured message passing between intelligent agents
 - **Prompt Chains**: Sequenced operations with context preservation
 - **Event Streams**: Asynchronous communication for reactive processing
@@ -43,6 +47,7 @@ The platform uses goroutine-based sessions to handle three distinct interaction 
 ### Session Types
 
 **Command Sessions** execute single operations and return results:
+
 ```go
 type CommandSession struct {
     ID       string
@@ -53,6 +58,7 @@ type CommandSession struct {
 ```
 
 **Interactive Sessions** maintain stateful connections for ongoing interactions:
+
 ```go
 type InteractiveSession struct {
     ID          string
@@ -66,6 +72,7 @@ type InteractiveSession struct {
 ```
 
 **Daemon Sessions** run continuously, responding to events and performing scheduled tasks:
+
 ```go
 type DaemonSession struct {
     ID            string
@@ -116,6 +123,7 @@ func (a *MainAgent) routeTask(task Task) {
 ```
 
 This architecture provides:
+
 - Fault isolation between sessions
 - Natural concurrency boundaries
 - Clear communication contracts
@@ -165,6 +173,7 @@ services:
 ```
 
 This three-form approach provides:
+
 - Maximum deployment flexibility
 - Consistent interfaces across forms
 - Progressive adoption paths
@@ -243,6 +252,7 @@ providers:
 ```
 
 This abstraction approach enables:
+
 - Provider switching without code changes
 - Multi-provider strategies (primary/fallback)
 - Provider-specific optimizations
@@ -255,19 +265,21 @@ The platform distinguishes between agents that exist for a single session and th
 ### Agent Types
 
 **Transient Runtime Agents** are initialized at session start and removed at session end:
+
 ```
 .claude/agents/runtime/
-\u251c\u2500\u2500 character-elena-vasquez.md
-\u251c\u2500\u2500 narrative-director.md
-\u2514\u2500\u2500 combat-resolver.md
+├── character-elena-vasquez.md
+├── narrative-director.md
+└── combat-resolver.md
 ```
 
 **Persistent System Agents** provide always-available capabilities:
+
 ```
 .claude/agents/
-\u251c\u2500\u2500 code-analyzer/
-\u251c\u2500\u2500 documentation-writer/
-\u2514\u2500\u2500 test-generator/
+├── code-analyzer/
+├── documentation-writer/
+└── test-generator/
 ```
 
 ### Hybrid Format Strategy
@@ -275,6 +287,7 @@ The platform distinguishes between agents that exist for a single session and th
 Agents use different formats for different purposes:
 
 **Persistent Storage Format** (YAML/JSON):
+
 ```yaml
 # adventures/first-contact/characters/captain-vasquez.yml
 id: captain-elena-vasquez
@@ -292,6 +305,7 @@ evolution_log:
 ```
 
 **Runtime Agent Format** (Markdown):
+
 ```markdown
 # Captain Elena Vasquez
 
@@ -322,13 +336,13 @@ The platform manages bidirectional state flow:
 
 ```go
 type AgentLifecycle interface {
-    // Session start: Load persistent \u2192 Create runtime
+    // Session start: Load persistent → Create runtime
     InitializeRuntime(ctx context.Context, persistentPath string) error
     
     // Session active: Track runtime changes
     CaptureEvolution(ctx context.Context, agentID string) Evolution
     
-    // Session end: Extract changes \u2192 Update persistent
+    // Session end: Extract changes → Update persistent
     SyncToPersistent(ctx context.Context, evolution Evolution) error
     
     // Cleanup: Remove runtime agents
@@ -337,6 +351,7 @@ type AgentLifecycle interface {
 ```
 
 This lifecycle approach provides:
+
 - Efficient resource usage (agents only exist when needed)
 - Clean session isolation
 - Evolution tracking across sessions
@@ -350,20 +365,20 @@ The platform uses directory conventions to separate concerns and establish clear
 
 ```
 project/
-\u251c\u2500\u2500 prompts/                    # User-facing interfaces
-\u2502   \u251c\u2500\u2500 generate-report.md
-\u2502   \u2514\u2500\u2500 analyze-data.md
-\u251c\u2500\u2500 prompts/system/            # Internal system operations
-\u2502   \u251c\u2500\u2500 convert-format.md
-\u2502   \u251c\u2500\u2500 extract-metadata.md
-\u2502   \u2514\u2500\u2500 validate-schema.md
-\u2514\u2500\u2500 .claude/agents/            # Agent definitions
-    \u251c\u2500\u2500 runtime/               # Transient session agents
-    \u2502   \u251c\u2500\u2500 character-elena.md
-    \u2502   \u2514\u2500\u2500 narrative-director.md
-    \u251c\u2500\u2500 code-analyzer/         # Persistent system agent
-    \u251c\u2500\u2500 test-generator/        # Persistent system agent
-    \u2514\u2500\u2500 doc-writer/           # Persistent system agent
+├── prompts/                    # User-facing interfaces
+│   ├── generate-report.md
+│   └── analyze-data.md
+├── prompts/system/            # Internal system operations
+│   ├── convert-format.md
+│   ├── extract-metadata.md
+│   └── validate-schema.md
+└── .claude/agents/            # Agent definitions
+    ├── runtime/               # Transient session agents
+    │   ├── character-elena.md
+    │   └── narrative-director.md
+    ├── code-analyzer/         # Persistent system agent
+    ├── test-generator/        # Persistent system agent
+    └── doc-writer/           # Persistent system agent
 ```
 
 ### Runtime Agent Management
@@ -386,12 +401,14 @@ This enables dynamic agent loading per session while keeping system agents alway
 ### Separation of Interfaces
 
 **User-Facing Prompts** define external interactions:
+
 - Clear documentation
 - Stable interfaces
 - Usage examples
 - Input validation
 
 **System Prompts** handle internal operations:
+
 - Format conversions
 - State extraction
 - Utility functions
@@ -400,6 +417,7 @@ This enables dynamic agent loading per session while keeping system agents alway
 ### Convention Benefits
 
 This organization pattern enables:
+
 - Clear architectural boundaries
 - Discoverability of capabilities
 - Separation of public/private interfaces
@@ -449,6 +467,7 @@ type CloudLLMProvider interface {
 ### Provider Examples
 
 **AWS Bedrock Integration**:
+
 ```yaml
 providers:
   bedrock:
@@ -461,6 +480,7 @@ providers:
 ```
 
 **GCP Vertex AI Integration**:
+
 ```yaml
 providers:
   vertex:
@@ -475,6 +495,7 @@ providers:
 ### Benefits
 
 This approach provides:
+
 - Data processing within organizational cloud boundaries
 - Compliance with data residency requirements
 - Network isolation through VPC endpoints
@@ -484,31 +505,37 @@ This approach provides:
 ## References
 
 ### AI Documentation
+
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)
 - [Subagents](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
 - [Model Context Protocol](https://modelcontextprotocol.io/overview)
 - [Agent2Agent](https://github.com/a2aproject/A2A)
 
 ### Cloud Documentation
+
 - [Cloud Integration](https://docs.anthropic.com/en/docs/claude-code/third-party-integrations)
 - [AWS Bedrock](https://docs.aws.amazon.com/bedrock/)
 - [GCP Vertex AI](https://cloud.google.com/vertex-ai/docs)
 
 ### Go
+
 - [Go Language](https://go.dev/doc)
 - [Effective Go - Concurrency](https://go.dev/doc/effective_go#concurrency)
 - [Go By Example](https://gobyexample.com)
 
 ### Protocol Documentation
+
 - [gRPC Documentation](https://grpc.io/docs/)
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 - [WebSocket Protocol RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
 
 ### Container and Orchestration
+
 - [Docker Documentation](https://docs.docker.com/)
 - [Kubernetes Documentation](https://kubernetes.io/docs/)
 - [Open Container Initiative](https://opencontainers.org/release-notices/overview/)
 
 ### Observability Standards
+
 - [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
 - [Prometheus Documentation](https://prometheus.io/docs/)
