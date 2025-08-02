@@ -20,25 +20,34 @@ Prompt: prompts/generate-adventure.md
 
 Available scenarios include cyberpunk heists, first contact crises, murder mysteries, and more. Each defines the theme, party size, and narrative arc.
 
-### 2. Adventure Generation
+### 2. Adventure Generation  
 The system creates:
-- **Character profiles** with personalities, goals, and decision frameworks
+- **Character profiles** with deep cultural backgrounds and authentic personalities
+- **Character subagents** for authentic behavioral responses during events
 - **Initial world state** based on your scenario
-- **Adventure-specific prompts** for simulation, summarization, and narration
+- **Adventure-specific prompts** for automated simulation, summarization, and narration
 
-### 3. Event Processing
-Each event follows a strict protocol:
-1. Load compressed state from previous event
-2. Describe the situation (300 tokens)
-3. Characters take actions (150 tokens each)
-4. Resolve mechanics (combat, social, exploration)
-5. Update character and world states
-6. Save state for next event
+### 3. Automated Event Processing
+Each event runs through a complete automated workflow:
+1. **Character Subagent Setup**: Convert YAML profiles to runtime subagents
+2. **Event State Detection**: Determine current adventure progress and next event
+3. **Character Actions**: Invoke character subagents for authentic responses
+4. **Mechanic Resolution**: Process actions through game mechanics
+5. **Character Evolution**: Extract growth and update persistent profiles  
+6. **State Persistence**: Save compressed state and detailed transcripts
+7. **Subagent Refresh**: Update runtime subagents with character evolution
 
-### 4. Token Economy
+### 4. Character Development System
+Characters grow authentically throughout adventures:
+- **Subagent-Driven Behavior**: Each character responds through dedicated subagent context
+- **Persistent Evolution**: Character growth tracked in database-ready YAML profiles
+- **Session Continuity**: Runtime subagents maintain character development between events
+- **Bidirectional Sync**: Evolution flows between persistent profiles and active subagents
+
+### 5. Token Economy
 Every action has a token cost:
 - Simple actions: 50 tokens
-- Complex actions: 100 tokens
+- Complex actions: 100 tokens  
 - Signature moves: 150 tokens
 
 This forces meaningful choices and prevents context overflow.
@@ -53,12 +62,13 @@ agentic-rpg-simulator/
 │   └── generate-scenario.md
 ├── scenarios/          # Pre-built adventure configurations
 ├── schemas/            # Data structure definitions
-└── [adventures]/       # Generated adventures
-    ├── scenario.yml
-    ├── characters/
-    ├── events/
-    ├── logs/          # Event transcripts (optional)
-    └── prompts/
+└── adventures/         # All generated adventures
+    └── [adventure-name]/
+        ├── scenario.yml
+        ├── characters/
+        ├── events/
+        ├── logs/      # Event transcripts (optional)
+        └── prompts/
 ```
 
 ## Quick Start
@@ -69,31 +79,44 @@ agentic-rpg-simulator/
    ```
    Choose from existing scenarios or create custom.
 
-2. **Run the adventure**:
+2. **Run the adventure** (fully automated):
    ```
-   Prompt: [adventure-name]/prompts/simulate-adventure.md
+   Prompt: adventures/[adventure-name]/prompts/simulate-adventure.md
    ```
+   This automatically processes the next event with character subagent participation, evolution tracking, and state persistence.
 
 3. **Review progress**:
    ```
-   Prompt: [adventure-name]/prompts/summarize-adventure.md
+   Prompt: adventures/[adventure-name]/prompts/summarize-adventure.md
    ```
 
 4. **Read event transcripts** (if logging enabled):
    ```
-   File: [adventure-name]/logs/event-[X].md
+   File: adventures/[adventure-name]/logs/event-[X].yaml
    ```
 
 ## Key Features
 
-### State Compression
-All persistent data is compressed into YAML state packages, enabling unlimited adventure length within fixed context windows.
+### Authentic Character Behavior
+Characters respond through dedicated subagent contexts with cultural authenticity:
+- Deep character backgrounds with genuine motivations
+- Subagent-driven responses that maintain consistent personality
+- Real-time character evolution tracking and persistence
+- Bidirectional synchronization between profiles and runtime behavior
+
+### State Compression & Persistence
+Hybrid data management for scalability and portability:
+- YAML profiles for database-ready persistent character data
+- Runtime subagents for authentic behavioral responses during events
+- Compressed state packages enabling unlimited adventure length
+- Automatic state synchronization and recovery systems
 
 ### Character Evolution
-Characters adapt based on experiences:
-- Personality shifts from major events
-- Relationship changes through interactions
-- Tactical evolution from successes/failures
+Characters grow authentically based on experiences:
+- Personality development from major events and relationship changes
+- Goal evolution and tactical adaptation from successes/failures
+- Cultural and background-informed character responses
+- Persistent growth that carries forward throughout adventures
 
 ### Flexible Scenarios
 From 5-event short stories to 20-event campaigns, across any genre:
@@ -140,14 +163,14 @@ Or copy an existing scenario from `scenarios/` and modify:
 ### Continue From Any Point
 Load a specific event state to branch the narrative:
 ```
-State: [adventure]/events/event-5-state.yml
-Prompt: [adventure]/prompts/simulate-adventure.md
+State: adventures/[adventure]/events/event-5-state.yml
+Prompt: adventures/[adventure]/prompts/simulate-adventure.md
 ```
 
 ### Narrative Export
 Transform compressed events into rich prose:
 ```
-Prompt: [adventure]/prompts/narrate-adventure.md
+Prompt: adventures/[adventure]/prompts/narrate-adventure.md
 ```
 
 ## Contributing

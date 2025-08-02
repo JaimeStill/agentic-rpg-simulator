@@ -1,0 +1,113 @@
+event_number: 1
+title: "The Discovery Convergence"
+complexity: medium
+token_budget: 1600
+location: "NeuroCorp Research Facilities - Bangalore R&D Lab and Auckland Oceanic Platform"
+
+event_setup:
+  narrative: |
+    Bangalore R&D Lab - 11:47 PM
+    Kavitha's monitoring array suddenly lights up with cascading alerts. The neural patterns she's been tracking have just synchronized across multiple subjects - and the bio-electric signatures are identical to what Tane reported from Auckland three days ago. Her encrypted comm device buzzes: an urgent message from her research partner.
+    
+    Auckland Oceanic Platform - 2:47 PM (next day)
+    Tane stands before his bio-electric sensor array, watching electromagnetic signatures pulse in rhythms that match traditional Māori navigation chants. The neural implant subjects in the isolation tanks are generating fields that his equipment shouldn't be able to detect - but his grandfather's pounamu pendant is vibrating with recognition.
+  
+  stakes: "Both researchers have discovered evidence that neural implants are triggering genuine magical phenomena, but corporate security algorithms are flagging their independent research. They have hours before their activities trigger a security review that could silence them permanently."
+
+character_actions:
+  - character: "Kavitha Subramanian"
+    response: |
+      *Fingers trembling over keyboard, meditation beads clicking softly*
+      
+      Corporate reporting protocol demands immediate escalation... but father's voice echoes: "Technology serves people, not profit margins."
+      
+      **Immediate actions:**
+      
+      1. **Data Protection**: Encrypt all neural-magical correlation files onto quantum drives. Mirror datasets to offshore servers using father's old underground network protocols.
+      
+      2. **Subject Safety**: Flag all manifesting subjects' files as "routine monitoring" to delay corporate intervention. Send anonymous warnings to their emergency contacts about potential "neural adjustment procedures."
+      
+      3. **Tane Contact**: Reply via secure channel: "Patterns confirmed. Corporate lockdown imminent. Suggest immediate data exchange and coordination."
+      
+      4. **Preparation**: Pack essential equipment, research drives, and emergency funds. Leave decoy data showing "investigation ongoing, require 48 hours for conclusive analysis."
+      
+      The synchronized patterns are undeniable - this isn't malfunction, it's evolution. But NeuroCorp will weaponize or suppress it.
+      
+      *Tamil whisper:* "Appa, guide me. The vulnerable need protection."
+      
+      Time to honor father's memory. Going underground in T-minus 3 hours.
+      
+      **Decision: Protect the subjects first, preserve the data, trust Tane completely.**
+    
+    evolution_indicators:
+      - "Transition from corporate insider to underground protector"
+      - "Activation of father's legacy networks"
+      - "Prioritizing subject safety over corporate protocols"
+
+  - character: "Tane Rahotu-Williams"
+    response: |
+      *Tane's fingers trace the warm pounamu pendant as the bio-electric readings pulse in rhythm with ancestral navigation songs*
+      
+      These patterns... they're singing whakapapa - the genealogy of consciousness itself. My parents were right - the implants aren't creating new abilities, they're awakening what was always there.
+      
+      *Quickly encrypts sensor data using traditional Māori weaving patterns as cipher keys*
+      
+      First priority: secure the data before Volkov notices. I'm uploading everything to the floating city quantum network using traditional navigation protocols - corporate systems won't recognize the indigenous encryption.
+      
+      *Opens secure channel to Kavitha*
+      
+      "E hoa, the ocean remembers what the land forgot. These signatures match deep-sea navigation patterns. We need to coordinate our findings before they silence us both. Can you cross-reference your neural maps with traditional Indian meditation practices? I suspect all indigenous knowledge systems hold pieces of this puzzle."
+      
+      *Begins subtle sabotage of monitoring equipment using electromagnetic interference techniques learned from studying dolphin echolocation*
+      
+      The ancestors are calling through the machines. Time to answer properly.
+    
+    evolution_indicators:
+      - "Integration of ancestral wisdom with cutting-edge science"
+      - "Traditional knowledge systems as advanced technology"
+      - "Confirmation of parents' research theories"
+
+mechanic_resolutions:
+  - type: "Data Security"
+    participants: ["Kavitha", "Tane"]
+    outcome: "Success - Both characters encrypt and backup research using underground networks invisible to corporate algorithms"
+    
+  - type: "Corporate Surveillance"
+    participants: ["Corporate Security Systems"]
+    outcome: "Delayed Detection - Operational security provides 18-hour window before formal investigation"
+    
+  - type: "Subject Protection"
+    participants: ["Kavitha"]
+    outcome: "Success - Flagging system delays corporate intervention on manifesting subjects"
+    
+  - type: "Cross-Platform Communication"
+    participants: ["Kavitha", "Tane"]
+    outcome: "Success - Secure channel established for real-time data sharing"
+
+world_impact:
+  - "Neural implants confirmed to awaken dormant human bio-electric abilities rather than create new ones"
+  - "Indigenous knowledge systems prove superior for understanding and utilizing these capabilities"
+  - "Underground resistance networks activated across both characters' locations"
+  - "Corporate suppression attempts begin but are temporarily evaded"
+
+character_evolution:
+  kavitha:
+    before: "Anxious researcher discovering corporate cover-up"
+    after: "Underground transition - data secured, subjects protected"
+    development: "Activated from corporate insider to underground protector, using father's legacy network for resistance"
+    
+  tane:
+    before: "Suspicious bio-systems specialist sensing electromagnetic anomalies"
+    after: "Data secured via indigenous networks, ancestral knowledge validated"
+    development: "Traditional wisdom integrated with cutting-edge science - indigenous methods prove superior for understanding neural-magical phenomena"
+
+event_summary:
+  outcome: "Successful discovery and protection of neural-magical research despite corporate surveillance"
+  consequences: "Both characters committed to underground resistance, corporate investigation incoming"
+  next_stakes: "Corporate security begins formal investigation - escape or capture?"
+
+next_event_preview:
+  trigger: "Corporate security begins formal investigation of both researchers' activities"
+  stakes: "Choice between corporate capture/silencing or successful escape to underground resistance networks"
+  complexity: "high"
+  estimated_tokens: 2000

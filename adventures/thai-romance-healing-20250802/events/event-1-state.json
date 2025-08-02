@@ -1,0 +1,45 @@
+{
+  "event_number": 1,
+  "world_state": {
+    "location": "Baan Sawan restaurant, quiet evening with rain outside",
+    "active_elements": [
+      "Intimate atmosphere created by storm and golden lamplight",
+      "Grandmother's healing tea brewing in kitchen",
+      "Traditional Thai music providing gentle backdrop",
+      "Cultural memories awakened through shared heritage"
+    ],
+    "resources": [
+      "Trust foundation established through vulnerable moment",
+      "Cultural bridge built through food and tradition",
+      "Safe emotional space created by Siriporn's care"
+    ]
+  },
+  "character_states": [
+    {
+      "id": "character-kamon-thanakit",
+      "name": "Kamon Thanakit",
+      "status": "Emotionally raw but beginning to feel safe, cultural pride stirring",
+      "evolution": "Slight crack in emotional armor - more receptive to genuine kindness",
+      "context": "Surprised by unexpected care, connecting to positive cultural memories through grandmother's wisdom"
+    },
+    {
+      "id": "character-siriporn-wongsuwan",
+      "name": "Siriporn Wongsuwan",
+      "status": "Confident in her healing instincts, warmth flowing naturally",
+      "evolution": "Increased comfort with emotional intimacy and cultural bridge-building",
+      "context": "Successfully created safe space for vulnerability, feels validated in her intuitive abilities"
+    }
+  ],
+  "action_log": [
+    {
+      "event": 1,
+      "summary": "Kamon arrived vulnerable and rain-soaked; Siriporn offered care through towel, guidance, and grandmother's healing recipes. First genuine connection established.",
+      "consequences": ["Trust foundation built", "Cultural understanding bridge created", "Both characters lowered emotional guards"]
+    }
+  ],
+  "next_event_setup": {
+    "trigger": "Siriporn returns from kitchen with special healing tea and traditional remedy food",
+    "stakes": "Deepening connection through sharing cultural healing wisdom",
+    "complexity": "low"
+  }
+}

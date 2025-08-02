@@ -1,0 +1,39 @@
+{
+  "event_number": 0,
+  "world_state": {
+    "location": "NeuroCorp Research Facilities - Bangalore R&D Lab and Auckland Oceanic Platform",
+    "active_elements": [
+      "First confirmed neural-implant magical manifestation detected",
+      "Corporate surveillance increasing on anomalous research",
+      "Underground networks beginning to form among affected implant users"
+    ],
+    "resources": [
+      "Access to NeuroCorp research data and laboratory equipment",
+      "Encrypted communication channels to external communities",
+      "Traditional knowledge and bio-electric sensing abilities"
+    ]
+  },
+  "character_states": [
+    {
+      "id": "character-kavitha-subramanian",
+      "name": "Kavitha Subramanian",
+      "status": "Anxious researcher discovering corporate cover-up",
+      "evolution": "Starting state - just found first confirmed magical manifestation",
+      "context": "Working late in Bangalore lab, analyzing anomalous neural patterns"
+    },
+    {
+      "id": "character-tane-rahotu-williams", 
+      "name": "Tane Rahotu-Williams",
+      "status": "Suspicious bio-systems specialist sensing electromagnetic anomalies",
+      "evolution": "Starting state - detecting bio-electric signatures that match parents' research",
+      "context": "Stationed at Auckland platform, monitoring neural-implant test subjects"
+    }
+  ],
+  "action_log": [],
+  "next_event_setup": {
+    "trigger": "Kavitha's discovery of magical manifestation data correlates with Tane's bio-electric readings",
+    "stakes": "Corporate security discovers their independent research - choice between silence, exposure, or going underground",
+    "complexity": "medium"
+  },
+  "timestamp": "2025-08-02T00:00:00Z"
+}

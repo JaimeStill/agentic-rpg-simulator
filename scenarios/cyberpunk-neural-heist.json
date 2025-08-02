@@ -1,0 +1,40 @@
+{
+  "number_of_agents": 4,
+  "number_of_events": 10,
+  "theme": "Cyberpunk",
+  "scenario": "Elite crew hired to steal experimental neural implants from Nexus Corp's quantum-encrypted vault. The implants grant superhuman cognition but may have hidden purposes. Double-crosses expected.",
+  "max_event_tokens": 2000,
+  "action_cost": 150,
+  "mechanic_cost": 200,
+  "description_budget": 300,
+  "complexity_mix": {
+    "low": 20,
+    "medium": 50,
+    "high": 30
+  },
+  "character_evolution_rate": "rapid",
+  "world_persistence": "high",
+  "mechanic_learning": true,
+  "store_event_logs": false,
+  "log_format": "markdown",
+  "log_detail_level": "standard",
+  "starting_heat": 0,
+  "max_heat": 10,
+  "betrayal_probability": "high",
+  "tech_level": "bleeding-edge",
+  "key_locations": [
+    "The Grid - Cyberspace layer for hacking",
+    "Nexus Spire - 200-floor corporate arcology",
+    "Neon Underground - Black market and safehouse network"
+  ],
+  "potential_complications": [
+    "Rival crew attempting same heist",
+    "AI security with learning algorithms",
+    "Memory wipes from failed neural hacks",
+    "Corporate mole in the team"
+  ],
+  "generation_mode": "Curated",
+  "generation_date": "2025-08-01",
+  "scenario_author": "Event Conductor",
+  "difficulty_rating": "Veteran"
+}

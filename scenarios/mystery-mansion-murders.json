@@ -1,0 +1,52 @@
+{
+  "number_of_agents": 3,
+  "number_of_events": 8,
+  "theme": "Mystery",
+  "scenario": "Reclusive millionaire Victor Ashwood invites select guests to reveal his will changes. During dinner, the lights go out. When they return, Victor is dead—stabbed with an antique dagger. As a storm traps everyone inside, more deaths follow an occult pattern. The killer is among them.",
+  "max_event_tokens": 2000,
+  "action_cost": 150,
+  "mechanic_cost": 200,
+  "description_budget": 300,
+  "complexity_mix": {
+    "low": 25,
+    "medium": 60,
+    "high": 15
+  },
+  "character_evolution_rate": "rapid",
+  "world_persistence": "high",
+  "mechanic_learning": true,
+  "store_event_logs": false,
+  "log_format": "markdown",
+  "log_detail_level": "standard",
+  "suspects_remaining": 8,
+  "clues_discovered": 0,
+  "red_herrings": 5,
+  "storm_intensity": "increasing",
+  "mansion_areas": [
+    "Library - Occult books and hidden passages",
+    "Trophy Room - Weapons and taxidermy",
+    "Wine Cellar - Secret meetings location",
+    "Observatory - Astronomical charts and rituals",
+    "Servant Quarters - Staff secrets"
+  ],
+  "suspect_archetypes": [
+    "The Heir - Desperate for inheritance",
+    "The Mistress - Hidden relationship with victim",
+    "The Business Partner - Financial disputes",
+    "The Occultist - Obsessed with mansion's history",
+    "The Doctor - Access to poisons",
+    "The Groundskeeper - Knows all mansion secrets",
+    "The Lawyer - Privy to will contents",
+    "The Prodigal - Recently returned family member"
+  ],
+  "murder_pattern_hints": [
+    "Deaths mirror constellation positions",
+    "Victims share hidden connection",
+    "Ancient curse or calculated plan?",
+    "Each death occurs at specific times"
+  ],
+  "generation_mode": "Curated",
+  "generation_date": "2025-08-01",
+  "scenario_author": "Event Conductor",
+  "difficulty_rating": "Moderate"
+}

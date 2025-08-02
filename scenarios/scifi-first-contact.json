@@ -1,0 +1,47 @@
+{
+  "number_of_agents": 5,
+  "number_of_events": 15,
+  "theme": "Sci-Fi",
+  "scenario": "During routine deep space survey, the crew encounters an alien vessel. A translation error during first contact is interpreted as a declaration of war. Now both species mobilize fleets while the crew races to prevent catastrophe and uncover who benefits from conflict.",
+  "max_event_tokens": 2000,
+  "action_cost": 150,
+  "mechanic_cost": 200,
+  "description_budget": 300,
+  "complexity_mix": {
+    "low": 35,
+    "medium": 50,
+    "high": 15
+  },
+  "character_evolution_rate": "moderate",
+  "world_persistence": "high",
+  "mechanic_learning": true,
+  "store_event_logs": false,
+  "log_format": "markdown",
+  "log_detail_level": "standard",
+  "translation_accuracy": 40,
+  "cultural_incidents": 0,
+  "peace_index": 50,
+  "conspiracy_depth": "hidden",
+  "key_factions": [
+    "Earth Colonial Union - Humanity's government",
+    "The Synthesis - Alien collective consciousness",
+    "Warmonger Industries - Arms dealers profiting from conflict",
+    "Pacifist Movement - Cross-species peace advocates"
+  ],
+  "alien_traits": [
+    "Communicate through bioluminescent patterns",
+    "Consider direct eye contact aggressive",
+    "Share memories through touch",
+    "No concept of individual ownership"
+  ],
+  "potential_discoveries": [
+    "Aliens fleeing something worse",
+    "Shared ancient enemy approaching",
+    "Humans and aliens share engineered origin",
+    "Corporate sabotage of translation systems"
+  ],
+  "generation_mode": "Curated",
+  "generation_date": "2025-08-01",
+  "scenario_author": "Event Conductor",
+  "difficulty_rating": "Moderate"
+}

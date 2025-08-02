@@ -1,0 +1,255 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RPG Character Profile",
+  "description": "Character profile structure for adventure participants",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "core_identity",
+    "current_status",
+    "recent_evolution",
+    "active_goals",
+    "key_relationships",
+    "decision_framework",
+    "event_response_protocol"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^character-[a-z-]+$",
+      "description": "Unique character identifier"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "description": "Character's full name"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Optional title or epithet",
+      "examples": [
+        "The Awakened Farmer",
+        "Keeper of Ancient Secrets",
+        "Street Vigilante"
+      ]
+    },
+    "core_identity": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "maxLength": 50
+      },
+      "description": "2-3 traits that never change",
+      "examples": [
+        ["Fiercely loyal", "Naturally curious", "Quick to anger"],
+        ["Methodical planner", "Deeply empathetic"]
+      ]
+    },
+    "current_status": {
+      "type": "object",
+      "required": ["health", "resources", "location"],
+      "properties": {
+        "health": {
+          "type": "string",
+          "maxLength": 20,
+          "description": "Physical/mental condition"
+        },
+        "resources": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Available resources (magic, supplies, etc.)"
+        },
+        "location": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Current location or position"
+        }
+      }
+    },
+    "recent_evolution": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "How they've changed from recent events"
+    },
+    "active_goals": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "description": "Immediate objectives driving the character"
+    },
+    "key_relationships": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["connection", "sentiment"],
+        "properties": {
+          "connection": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "Nature of the relationship"
+          },
+          "sentiment": {
+            "type": "string",
+            "enum": ["hostile", "suspicious", "neutral", "friendly", "devoted"],
+            "description": "Current feeling toward this person"
+          }
+        }
+      },
+      "description": "Important connections to other characters"
+    },
+    "decision_framework": {
+      "type": "object",
+      "required": [
+        "primary_drive",
+        "risk_tolerance",
+        "preferred_tactics",
+        "evolution_triggers"
+      ],
+      "properties": {
+        "primary_drive": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "Core motivation guiding decisions",
+          "examples": [
+            "Protect the innocent at all costs",
+            "Uncover the truth, no matter the danger",
+            "Gain power to never be helpless again"
+          ]
+        },
+        "risk_tolerance": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "description": "Willingness to take risks"
+        },
+        "preferred_tactics": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "description": "How they approach problems",
+          "examples": [
+            ["Direct confrontation", "Intimidation"],
+            ["Careful planning", "Gathering allies", "Misdirection"]
+          ]
+        },
+        "evolution_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "description": "Events that would change their approach"
+        }
+      }
+    },
+    "event_response_protocol": {
+      "type": "object",
+      "required": ["token_efficiency", "character_growth"],
+      "properties": {
+        "token_efficiency": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "Guidance for focused, decisive responses"
+        },
+        "character_growth": {
+          "type": "string",
+          "maxLength": 150,
+          "description": "How to adapt based on recent experiences"
+        }
+      }
+    },
+    "background": {
+      "type": "object",
+      "properties": {
+        "origin": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Where they came from"
+        },
+        "defining_moment": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Event that shaped who they are"
+        },
+        "secret": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Hidden information about the character"
+        }
+      }
+    },
+    "abilities": {
+      "type": "object",
+      "properties": {
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "description": "Learned abilities and expertise"
+        },
+        "special_powers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "description": "Magical or extraordinary abilities"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "description": "Weaknesses or restrictions"
+        }
+      }
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 150
+          },
+          "special_properties": {
+            "type": "string",
+            "maxLength": 100
+          }
+        }
+      },
+      "description": "Starting equipment and special items"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this profile was created"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification to profile"
+    }
+  }
+}

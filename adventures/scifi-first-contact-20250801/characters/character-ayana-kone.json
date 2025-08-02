@@ -1,0 +1,74 @@
+{
+  "id": "character-ayana-kone",
+  "name": "Ayana Kone",
+  "title": "Security Chief",
+  "core_identity": [
+    "Protective guardian",
+    "Tactical strategist", 
+    "Prepared for any threat"
+  ],
+  "current_status": {
+    "health": "Healthy",
+    "resources": "Combat equipment, tactical sensors, security systems",
+    "location": "Monitoring sensor grids, maintaining security protocols"
+  },
+  "recent_evolution": "Starting state - no recent changes",
+  "active_goals": [
+    "Protect crew from unknown threats",
+    "Maintain ship security",
+    "Assess alien capabilities"
+  ],
+  "key_relationships": {
+    "Captain Vasquez": {
+      "connection": "Professional partnership",
+      "sentiment": "friendly"
+    },
+    "crew": {
+      "connection": "Trains other crew in security procedures",
+      "sentiment": "friendly"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Ensure crew survival against all potential threats",
+    "risk_tolerance": "low",
+    "preferred_tactics": [
+      "Threat assessment",
+      "Defensive positioning",
+      "Controlled engagement"
+    ],
+    "evolution_triggers": [
+      "Combat encounters",
+      "Crew injuries",
+      "Trust vs security dilemmas"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Concise tactical communication with situational awareness",
+    "character_growth": "Learns to balance security concerns with diplomatic necessities"
+  },
+  "background": {
+    "origin": "Former Colonial Defense special operations",
+    "defining_moment": "Expert in xenobiology threats and first contact security",
+    "secret": "Chosen for mission due to experience with unknown hostile environments and ability to remain calm under pressure"
+  },
+  "equipment": [
+    {
+      "name": "Advanced combat armor and weapons",
+      "description": "Military-grade protection and offensive capabilities"
+    },
+    {
+      "name": "Tactical sensor array",
+      "description": "Advanced threat detection and analysis systems"
+    },
+    {
+      "name": "Emergency containment protocols",
+      "description": "Systems for containing unknown threats"
+    },
+    {
+      "name": "Non-lethal restraint systems",
+      "description": "Equipment for subduing without permanent harm"
+    }
+  ],
+  "created_at": "2025-08-01T00:00:00Z",
+  "last_updated": "2025-08-01T00:00:00Z"
+}

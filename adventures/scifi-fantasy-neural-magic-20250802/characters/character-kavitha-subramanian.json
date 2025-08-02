@@ -1,0 +1,109 @@
+{
+  "id": "character-kavitha-subramanian",
+  "name": "Kavitha Subramanian",
+  "title": "Neural Engineer and Corporate Resistance Leader",
+  "core_identity": [
+    "Brilliant but suspicious neural engineer",
+    "Protector of the vulnerable", 
+    "Bridge between old wisdom and new technology"
+  ],
+  "current_status": {
+    "health": "Healthy but anxious",
+    "resources": "Encrypted quantum drives, underground network access, laboratory equipment",
+    "location": "Underground transition - preparing escape from corporate surveillance"
+  },
+  "recent_evolution": "Activated from corporate insider to underground protector, using father's legacy network for resistance",
+  "active_goals": [
+    "Escape corporate detection with critical data intact",
+    "Coordinate with Tane for joint resistance efforts", 
+    "Protect neural-magical subjects from corporate adjustment procedures"
+  ],
+  "key_relationships": {
+    "Zev": {
+      "connection": "Deep research partnership and trusted colleague",
+      "sentiment": "devoted"
+    },
+    "Director Yolanda Vasquez": {
+      "connection": "Corporate superior with hidden agenda",
+      "sentiment": "suspicious"
+    },
+    "Arjun": {
+      "connection": "Younger brother in Neo-Chennai, weekly video calls",
+      "sentiment": "devoted"
+    },
+    "Tane Rahotu-Williams": {
+      "connection": "Research partner discovering neural-magical phenomena",
+      "sentiment": "friendly"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Honor her father's memory by ensuring neural technology serves humanity, not corporate greed",
+    "risk_tolerance": "high",
+    "preferred_tactics": [
+      "Meticulous data collection",
+      "Building networks of trust with fellow researchers",
+      "Using meditation to enhance pattern recognition"
+    ],
+    "evolution_triggers": [
+      "Discovering evidence of corporate harm to test subjects",
+      "Witnessing undeniable magical phenomena", 
+      "Threats to her brother or research partner"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Speaks in precise technical language mixed with occasional Tamil phrases when emotional, asks probing questions to uncover hidden motives",
+    "character_growth": "Evolution from corporate insider to underground resistance leader, learning to trust both technology and ancient wisdom"
+  },
+  "background": {
+    "origin": "Born in the vertical slums of Neo-Chennai where her father Ravi worked as an underground neural implant technician, helping poor families access technology the corporations kept expensive.",
+    "defining_moment": "After her father's death from a botched experimental procedure, she won a scholarship to study at IIT Mumbai, specializing in consciousness-technology interfaces. This shaped her distrust of corporate-controlled technology and drive to make neural enhancement ethical.",
+    "secret": "Practices her grandmother's meditation techniques, which she believes enhance her ability to perceive patterns in neural data that others miss. She's begun to suspect these techniques are actually a form of bio-electric manipulation."
+  },
+  "abilities": {
+    "skills": [
+      "Neural interface programming",
+      "Consciousness-technology analysis", 
+      "Traditional Tamil meditation",
+      "Underground network navigation",
+      "Bio-electric pattern recognition"
+    ],
+    "special_powers": [
+      "Enhanced pattern recognition through meditation",
+      "Intuitive understanding of neural-magical phenomena"
+    ],
+    "limitations": [
+      "Emotionally driven decision-making when family is threatened",
+      "Struggles with trusting corporate authority",
+      "Limited combat training"
+    ]
+  },
+  "equipment": [
+    {
+      "name": "Custom-modified neural monitoring array",
+      "description": "Enhanced with her father's black-market improvements for detecting unusual neural patterns",
+      "special_properties": "Can detect bio-electric anomalies invisible to standard equipment"
+    },
+    {
+      "name": "Encrypted quantum storage drives", 
+      "description": "High-capacity storage for sensitive research data",
+      "special_properties": "Quantum-encrypted with father's underground network protocols"
+    },
+    {
+      "name": "Traditional Tamil meditation beads",
+      "description": "Helps her focus when analyzing complex neural patterns",
+      "special_properties": "Seems to enhance bio-electric sensitivity during use"
+    },
+    {
+      "name": "Corporate access credentials",
+      "description": "NeuroCorp research laboratory key-cards and system access",
+      "special_properties": "May be flagged by security systems soon"
+    },
+    {
+      "name": "Secure communication device",
+      "description": "Encrypted device for contacting her brother and underground networks",
+      "special_properties": "Connected to father's legacy resistance networks"
+    }
+  ],
+  "created_at": "2025-08-02T00:00:00Z",
+  "last_updated": "2025-08-02T12:00:00Z"
+}

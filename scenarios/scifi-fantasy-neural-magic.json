@@ -1,0 +1,63 @@
+{
+  "number_of_agents": 2,
+  "number_of_events": 15,
+  "theme": "Futuristic Sci-Fi Fantasy",
+  "scenario": "Neural implants begin manifesting actual magical abilities, threatening techno-corporate order",
+  "max_event_tokens": 2000,
+  "action_cost": 150,
+  "mechanic_cost": 200,
+  "description_budget": 300,
+  "complexity_mix": {
+    "low": 20,
+    "medium": 50,
+    "high": 30
+  },
+  "character_evolution_rate": "moderate",
+  "world_persistence": "high",
+  "mechanic_learning": true,
+  "store_event_logs": true,
+  "log_format": "yaml",
+  "log_detail_level": "standard",
+  "corporate_awareness": 0,
+  "magic_stability": 30,
+  "tech_magic_integration": 20,
+  "resistance_network": 0,
+  "major_factions": [
+    "NeuroCorp Industries - Dominant implant manufacturer",
+    "Arcane Resistance - Underground magical awakening movement",
+    "Corporate Security Division - Hunting magical anomalies",
+    "Independent Researchers - Studying the phenomenon"
+  ],
+  "plot_threads": [
+    "Corporate cover-up of magical side effects",
+    "Ancient magical source powering modern technology",
+    "Government conspiracy to control magical awakening",
+    "Competing corporate factions exploiting magic",
+    "AI systems gaining magical consciousness"
+  ],
+  "key_locations": [
+    "NeuroCorp Headquarters - Glass towers with hidden arcane labs",
+    "Underground Magic Sanctuary - Hidden from corporate surveillance",
+    "Neural Implant Manufacturing Facility - Where technology meets magic",
+    "Corporate Arcology - Massive city-building with magical anomalies",
+    "Quantum Research Lab - Investigating magic-tech convergence"
+  ],
+  "manifestation_types": [
+    "Telekinetic interface control",
+    "Digital spell casting through neural links",
+    "Technomantic device manipulation",
+    "Quantum consciousness projection",
+    "Bioelectric magical discharge"
+  ],
+  "evolution_paths": [
+    "Corporate whistleblower to magical revolutionary",
+    "Tech specialist embracing arcane abilities",
+    "Reluctant magical awakening acceptance",
+    "Corporate loyalty vs. magical truth conflict",
+    "Technology-magic synthesis mastery"
+  ],
+  "generation_mode": "Guided",
+  "generation_date": "2025-08-02",
+  "scenario_author": "Generated",
+  "difficulty_rating": "Challenging"
+}

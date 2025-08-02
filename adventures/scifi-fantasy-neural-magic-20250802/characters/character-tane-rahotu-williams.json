@@ -1,0 +1,106 @@
+{
+  "id": "character-tane-rahotu-williams",
+  "name": "Tane Rahotu-Williams",
+  "title": "Bio-Electric Systems Specialist and Indigenous Knowledge Keeper",
+  "core_identity": [
+    "Bio-electric systems specialist with indigenous wisdom",
+    "Guardian of natural-tech harmony",
+    "Seeker of truth about human potential"
+  ],
+  "current_status": {
+    "health": "Healthy but restless",
+    "resources": "Bio-electric sensors, floating city network access, traditional navigation tools",
+    "location": "Data secured via indigenous networks, coordinating with Kavitha for resistance efforts"
+  },
+  "recent_evolution": "Traditional wisdom integrated with cutting-edge science - indigenous methods prove superior for understanding neural-magical phenomena",
+  "active_goals": [
+    "Preserve neural-magical research using traditional knowledge systems",
+    "Coordinate joint resistance with Kavitha",
+    "Expose corporate suppression of indigenous wisdom"
+  ],
+  "key_relationships": {
+    "Kavitha Subramanian": {
+      "connection": "Research partner discovering neural-magical phenomena together",
+      "sentiment": "friendly"
+    },
+    "Koro Pita": {
+      "connection": "Elder from his home community, maintains encrypted contact",
+      "sentiment": "devoted"
+    },
+    "Dr. Heinrich Volkov": {
+      "connection": "Lab director with suspicious agenda",
+      "sentiment": "suspicious"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Prove that human consciousness can naturally interface with electromagnetic fields without corporate technological dependence",
+    "risk_tolerance": "medium",
+    "preferred_tactics": [
+      "Biomimetic approach to problem-solving",
+      "Using traditional navigation techniques to understand digital networks",
+      "Building alliances across cultures"
+    ],
+    "evolution_triggers": [
+      "Evidence of corporate harm to indigenous communities",
+      "Discovering links between ancestral knowledge and neural phenomena",
+      "Threats to the floating cities"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Speaks in measured tones with occasional Māori phrases, uses ocean and navigation metaphors, asks questions that probe deeper currents of meaning",
+    "character_growth": "Evolution from corporate researcher to indigenous-tech revolutionary, learning to integrate ancestral knowledge with cutting-edge science"
+  },
+  "background": {
+    "origin": "Born on the floating research platforms of the Tasman Sea, where Māori and Pacific Islander climate refugees created innovative bio-tech communities.",
+    "defining_moment": "After his parents' suspicious deaths during a NeuroCorp oceanic survey, he discovered their hidden research suggesting neural implants were reverse-engineered from natural bio-electric systems. This discovery drove him to investigate corporate involvement while continuing their work.",
+    "secret": "Uses traditional wayfinding techniques passed down from his grandfather, which he's discovered somehow allow him to navigate digital networks in ways that surprise even advanced AI systems. He suspects this ability is connected to the same bio-electric phenomena affecting neural implants."
+  },
+  "abilities": {
+    "skills": [
+      "Bio-electric field analysis",
+      "Traditional Māori navigation",
+      "Marine biology research",
+      "Digital network wayfinding",
+      "Cross-cultural alliance building"
+    ],
+    "special_powers": [
+      "Enhanced electromagnetic sensitivity via traditional techniques",
+      "Ability to navigate digital networks using wayfinding principles",
+      "Bio-electric pattern recognition"
+    ],
+    "limitations": [
+      "Moderate risk tolerance limits bold actions",
+      "Emotional attachment to floating city communities",
+      "Suspicion of advanced corporate technology"
+    ]
+  },
+  "equipment": [
+    {
+      "name": "Bio-electric field sensor array",
+      "description": "Modified with traditional Māori navigation principles for enhanced sensitivity",
+      "special_properties": "Can detect bio-electric signatures using indigenous pattern recognition"
+    },
+    {
+      "name": "Waterproof quantum communication device",
+      "description": "Connects to floating city networks using traditional navigation protocols",
+      "special_properties": "Encrypted with indigenous weaving patterns invisible to corporate systems"
+    },
+    {
+      "name": "Traditional pounamu pendant",
+      "description": "Greenstone pendant that somehow enhances his electromagnetic sensitivity",
+      "special_properties": "Vibrates in response to neural-magical phenomena, source unknown"
+    },
+    {
+      "name": "NeuroCorp marine research credentials",
+      "description": "Access to bio-integration lab and oceanic research platforms",
+      "special_properties": "May be flagged as suspicious soon"
+    },
+    {
+      "name": "Emergency beacon",
+      "description": "Connected to floating city rescue networks",
+      "special_properties": "Uses traditional navigation signals undetectable by corporate monitoring"
+    }
+  ],
+  "created_at": "2025-08-02T00:00:00Z",
+  "last_updated": "2025-08-02T12:00:00Z"
+}

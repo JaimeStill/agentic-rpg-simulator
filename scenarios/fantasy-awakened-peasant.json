@@ -1,0 +1,64 @@
+{
+  "number_of_agents": 3,
+  "number_of_events": 9,
+  "theme": "Fantasy",
+  "scenario": "Peasant farmer discovers latent magical abilities that are perceived as a threat from the corrupt monarchy.",
+  "max_event_tokens": 2000,
+  "action_cost": 150,
+  "mechanic_cost": 200,
+  "description_budget": 300,
+  "complexity_mix": {
+    "low": 20,
+    "medium": 50,
+    "high": 30
+  },
+  "character_evolution_rate": "moderate",
+  "world_persistence": "high",
+  "mechanic_learning": true,
+  "store_event_logs": false,
+  "log_format": "markdown",
+  "log_detail_level": "standard",
+  "magic_control": 10,
+  "royal_suspicion": 0,
+  "peasant_support": 40,
+  "rebellion_seeds": 0,
+  "magical_manifestations": [
+    "Crops growing overnight",
+    "Healing touch emerging during crisis",
+    "Weather responding to emotions",
+    "Animals obeying unspoken commands",
+    "Visions of kingdom's true history"
+  ],
+  "monarchy_corruption": [
+    "Taxes funding decadent court",
+    "Secret mage-hunters eliminating threats",
+    "Noble houses hoarding magical artifacts",
+    "False prophecies maintaining control",
+    "Forbidden knowledge hidden in royal vaults"
+  ],
+  "potential_allies": [
+    "Underground magic users network",
+    "Disillusioned royal guard captain",
+    "Ancient forest spirits",
+    "Traveling bard spreading truth",
+    "Noble's rebellious heir"
+  ],
+  "key_locations": [
+    "Humble farm at kingdom's edge",
+    "Market square for public incidents",
+    "Hidden grove for magical training",
+    "Royal city's oppressive walls",
+    "Ancient ruins holding truth"
+  ],
+  "evolution_paths": [
+    "Reluctant hero accepting destiny",
+    "Power corruption temptation",
+    "Revolutionary leader emergence",
+    "Magical mastery through trials",
+    "Truth about royal bloodline"
+  ],
+  "generation_mode": "Guided",
+  "generation_date": "2025-08-01",
+  "configuration_type": "Inverse Prompted",
+  "difficulty_rating": "Challenging"
+}

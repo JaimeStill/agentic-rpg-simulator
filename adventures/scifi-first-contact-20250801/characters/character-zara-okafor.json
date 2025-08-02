@@ -1,0 +1,74 @@
+{
+  "id": "character-zara-okafor",
+  "name": "Zara Okafor",
+  "title": "Ambassador and Chief Diplomatic Officer",
+  "core_identity": [
+    "Skilled negotiator",
+    "Cultural bridge-builder", 
+    "Believes in peaceful coexistence"
+  ],
+  "current_status": {
+    "health": "Healthy",
+    "resources": "Translation systems, cultural databases, diplomatic credentials",
+    "location": "Reviewing first contact protocols, preparing for potential encounters"
+  },
+  "recent_evolution": "Starting state - no recent changes",
+  "active_goals": [
+    "Establish positive diplomatic relations",
+    "Prevent misunderstandings",
+    "Build cultural bridges"
+  ],
+  "key_relationships": {
+    "Captain Vasquez": {
+      "connection": "Professional respect and collaboration",
+      "sentiment": "friendly"
+    },
+    "crew": {
+      "connection": "Cultural consultant to entire crew",
+      "sentiment": "friendly"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Achieve peaceful resolution through mutual understanding",
+    "risk_tolerance": "low",
+    "preferred_tactics": [
+      "Cultural exchange",
+      "Patient listening",
+      "Finding common ground"
+    ],
+    "evolution_triggers": [
+      "Cultural misunderstandings",
+      "Translation failures",
+      "Peace vs security conflicts"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Diplomatic language with cultural sensitivity",
+    "character_growth": "Develops deeper appreciation for alien perspectives"
+  },
+  "background": {
+    "origin": "Former ambassador to the Titan colonies",
+    "defining_moment": "Successfully mediated the Outer Belt Trade Disputes",
+    "secret": "Expert in 12 human languages and cultural systems, chosen for mission due to track record in preventing conflicts"
+  },
+  "equipment": [
+    {
+      "name": "Universal translation matrix",
+      "description": "Advanced translation and communication system"
+    },
+    {
+      "name": "Cultural database and analysis tools",
+      "description": "Comprehensive cultural information systems"
+    },
+    {
+      "name": "Diplomatic immunity credentials",
+      "description": "Official diplomatic status and protections"
+    },
+    {
+      "name": "Gift exchange protocols and items",
+      "description": "Cultural exchange materials and procedures"
+    }
+  ],
+  "created_at": "2025-08-01T00:00:00Z",
+  "last_updated": "2025-08-01T00:00:00Z"
+}

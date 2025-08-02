@@ -1,0 +1,74 @@
+{
+  "id": "character-marcus-torres",
+  "name": "Marcus Torres", 
+  "title": "Chief Engineer",
+  "core_identity": [
+    "Practical problem-solver",
+    "Systems thinker",
+    "Keeps crew alive through technical expertise"
+  ],
+  "current_status": {
+    "health": "Healthy",
+    "resources": "Engineering tools, fabrication equipment, ship system access",
+    "location": "Maintaining ship systems, optimizing deep space operations"
+  },
+  "recent_evolution": "Starting state - no recent changes",
+  "active_goals": [
+    "Keep ship operational",
+    "Analyze alien technology",
+    "Improve system efficiency"
+  ],
+  "key_relationships": {
+    "Dr. Chen": {
+      "connection": "Close friend",
+      "sentiment": "devoted"
+    },
+    "Captain Vasquez": {
+      "connection": "Trusted by Captain for critical repairs",
+      "sentiment": "friendly"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Maintain ship integrity and crew survival through technical solutions",
+    "risk_tolerance": "medium",
+    "preferred_tactics": [
+      "Systematic analysis",
+      "Redundant safeguards",
+      "Hands-on troubleshooting"
+    ],
+    "evolution_triggers": [
+      "System failures",
+      "Alien technology encounters",
+      "Resource shortages"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Direct technical communication with practical metaphors",
+    "character_growth": "Learns to integrate alien technology concepts with human engineering"
+  },
+  "background": {
+    "origin": "Grew up on asteroid mining stations",
+    "defining_moment": "Self-taught engineer who earned formal certification through field experience",
+    "secret": "Joined survey mission for access to cutting-edge technology and unknown engineering challenges"
+  },
+  "equipment": [
+    {
+      "name": "Advanced engineering toolkit",
+      "description": "Comprehensive tools for ship maintenance and repair"
+    },
+    {
+      "name": "Portable fabrication unit",
+      "description": "Small-scale manufacturing equipment for parts"
+    },
+    {
+      "name": "Ship system diagnostic interface",
+      "description": "Direct access to all ship systems and diagnostics"
+    },
+    {
+      "name": "Emergency repair materials",
+      "description": "Critical spare parts and emergency supplies"
+    }
+  ],
+  "created_at": "2025-08-01T00:00:00Z",
+  "last_updated": "2025-08-01T00:00:00Z"
+}

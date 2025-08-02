@@ -4,7 +4,7 @@ This directory contains pre-configured parameter sets for different adventure th
 
 ## Available Scenarios
 
-### 1. **cyberpunk-neural-heist.yml**
+### 1. **cyberpunk-neural-heist.json**
 **Theme:** Cyberpunk  
 **Length:** 10 events (Medium)  
 **Party Size:** 4 characters  
@@ -16,7 +16,7 @@ A daring heist to steal experimental neural implants from a megacorporation's se
 
 ---
 
-### 2. **scifi-first-contact.yml**
+### 2. **scifi-first-contact.json**
 **Theme:** Sci-Fi  
 **Length:** 15 events (Long)  
 **Party Size:** 5 characters  
@@ -28,7 +28,7 @@ Humanity's first encounter with an alien species goes catastrophically wrong whe
 
 ---
 
-### 3. **mystery-mansion-murders.yml**
+### 3. **mystery-mansion-murders.json**
 **Theme:** Mystery  
 **Length:** 8 events (Short)  
 **Party Size:** 3 characters  
@@ -40,7 +40,7 @@ A weekend gathering at an isolated mansion turns deadly when the host is found m
 
 ---
 
-### 4. **postapoc-water-wars.yml**
+### 4. **postapoc-water-wars.json**
 **Theme:** Post-Apocalyptic  
 **Length:** 12 events (Medium)  
 **Party Size:** 4 characters  
@@ -52,7 +52,7 @@ In the wasteland, water is more valuable than gold. When the party discovers a m
 
 ---
 
-### 5. **superhero-reality-crisis.yml**
+### 5. **superhero-reality-crisis.json**
 **Theme:** Superhero  
 **Length:** 14 events (Long)  
 **Party Size:** 6 characters  
@@ -64,7 +64,7 @@ When reality begins fracturing across the multiverse, a team of heroes from diff
 
 ---
 
-### 6. **fantasy-awakened-peasant.yml**
+### 6. **fantasy-awakened-peasant.json**
 **Theme:** Fantasy  
 **Length:** 9 events (Short)  
 **Party Size:** 3 characters  
@@ -74,13 +74,37 @@ A humble farmer's life is shattered when dormant magical abilities suddenly mani
 
 **Best For:** Players who enjoy underdog stories, political intrigue, and the classic hero's journey with magical awakening.
 
+---
+
+### 7. **scifi-fantasy-neural-magic.json**
+**Theme:** Futuristic Sci-Fi Fantasy  
+**Length:** 15 events (Long)  
+**Party Size:** 2 characters  
+**Complexity:** Intense, escalating magical-tech conflicts  
+
+Neural implants begin manifesting actual magical abilities, threatening the techno-corporate order. A duo must navigate corporate conspiracies, underground magical resistance, and the dangerous fusion of technology with awakening arcane powers. Features high-stakes corporate intrigue, magical discovery, and reality-altering confrontations.
+
+**Best For:** Players who enjoy cyberpunk themes merged with fantasy magic, corporate conspiracy plots, and intimate character partnerships facing overwhelming odds.
+
+---
+
+### 8. **thai-romance-healing.json**
+**Theme:** Thai Romantic Drama  
+**Length:** 9 events (Medium)  
+**Party Size:** 2 characters  
+**Complexity:** Balanced emotional journey  
+
+A humble and successful but troubled man who frequents a Thai restaurant after work falls in love with the waitress who regularly serves him. Through shared meals, gentle conversations, and cultural exchange, their developed bond brings them both healing and sets them on a beautiful journey together. Features authentic Thai cultural elements, slow-burn romance, and themes of emotional restoration.
+
+**Best For:** Players who enjoy intimate character-driven narratives, cultural exploration, and heartfelt romantic storylines with meaningful emotional development.
+
 ## Using Scenarios
 
 To use any scenario:
 
-1. Copy the desired scenario file to the root `parameters.yml`:
+1. Copy the desired scenario file to the root `parameters.json`:
    ```bash
-   cp scenarios/[scenario-name].yml parameters.yml
+   cp scenarios/[scenario-name].json parameters.json
    ```
 
 2. Generate the adventure:
@@ -92,7 +116,7 @@ To use any scenario:
 
 ## Creating Custom Scenarios
 
-Feel free to save your own interesting parameter combinations here. Use descriptive filenames that indicate the theme and core concept (e.g., `fantasy-dragon-prophecy.yml` or `horror-cosmic-lighthouse.yml`).
+Feel free to save your own interesting parameter combinations here. Use descriptive filenames that indicate the theme and core concept (e.g., `fantasy-dragon-prophecy.json` or `horror-cosmic-lighthouse.json`).
 
 ## Scenario Design Notes
 

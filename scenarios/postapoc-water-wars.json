@@ -1,0 +1,60 @@
+{
+  "number_of_agents": 4,
+  "number_of_events": 12,
+  "theme": "Post-Apocalyptic",
+  "scenario": "A dying trader whispers of the 'Aquifer' - a pre-war water purification facility still operational. With your settlement's well running dry, you must brave the wasteland, competing with the ruthless Water Barons and mutant tribes. But is the Aquifer salvation or a trap?",
+  "max_event_tokens": 2000,
+  "action_cost": 150,
+  "mechanic_cost": 200,
+  "description_budget": 300,
+  "complexity_mix": {
+    "low": 30,
+    "medium": 55,
+    "high": 15
+  },
+  "character_evolution_rate": "moderate",
+  "world_persistence": "high",
+  "mechanic_learning": true,
+  "store_event_logs": false,
+  "log_format": "markdown",
+  "log_detail_level": "standard",
+  "water_supplies": 20,
+  "radiation_level": "variable",
+  "faction_reputation": {
+    "settlements": 0,
+    "water_barons": -20,
+    "mutants": -10,
+    "scavengers": 0
+  },
+  "wasteland_zones": [
+    "The Glass Desert - Irradiated sand turned to glass",
+    "Rust Canyons - Pre-war city ruins",
+    "The Green Line - Toxic jungle reclaiming land",
+    "Salt Flats - Former ocean bed",
+    "The Boneyard - Mass grave battleground"
+  ],
+  "key_factions": [
+    "Water Barons - Control most water sources",
+    "The Pure - Anti-mutant zealots",
+    "Tunnel Rats - Underground survivors",
+    "The Evolved - Mutants embracing change",
+    "Lost Legion - Military remnants"
+  ],
+  "survival_challenges": [
+    "Rad storms that force shelter",
+    "Dehydration management",
+    "Equipment degradation",
+    "Trust vs resource conservation",
+    "Moral choices: share or hoard?"
+  ],
+  "aquifer_mysteries": [
+    "Why is it still operational?",
+    "Who maintains it?",
+    "What's the real cost of clean water?",
+    "Connection to pre-war experiments?"
+  ],
+  "generation_mode": "Curated",
+  "generation_date": "2025-08-01",
+  "scenario_author": "Event Conductor",
+  "difficulty_rating": "Hard"
+}

@@ -1,0 +1,60 @@
+{
+  "event_number": 0,
+  "world_state": {
+    "location": "Earth Survey Vessel Meridian - Deep Space Sector 7, conducting routine biological survey near gas giant Kepler-442b",
+    "active_elements": [
+      "Unexplored star system with potential for exotic life forms",
+      "Long-range sensors detecting unusual energy signatures",
+      "Crew eager to complete survey and return to Earth"
+    ],
+    "resources": [
+      "Fully stocked research vessel with 6-month supplies",
+      "Advanced sensor array and communication equipment", 
+      "Diplomatic first contact protocols and gift packages"
+    ]
+  },
+  "character_states": [
+    {
+      "id": "character-elena-vasquez",
+      "name": "Captain Elena Vasquez",
+      "status": "Healthy, commanding bridge operations",
+      "evolution": "Starting state - experienced military leader ready for unknown challenges",
+      "context": "Responsible for crew of 47, balancing scientific mission with safety protocols"
+    },
+    {
+      "id": "character-kai-chen",
+      "name": "Dr. Kai Chen", 
+      "status": "Healthy, analyzing sensor data",
+      "evolution": "Starting state - excited by potential discoveries ahead",
+      "context": "Leading xenobiology research team, eager to document new life forms"
+    },
+    {
+      "id": "character-zara-okafor",
+      "name": "Ambassador Zara Okafor",
+      "status": "Healthy, reviewing protocols",
+      "evolution": "Starting state - prepared for diplomatic challenges",
+      "context": "Cultural liaison ready to facilitate any first contact situations"
+    },
+    {
+      "id": "character-marcus-torres",
+      "name": "Engineer Marcus Torres",
+      "status": "Healthy, maintaining systems",
+      "evolution": "Starting state - ship systems running at peak efficiency",
+      "context": "Ensuring vessel readiness for extended deep space operations"
+    },
+    {
+      "id": "character-ayana-kone",
+      "name": "Security Chief Ayana Kone",
+      "status": "Healthy, monitoring sensors",
+      "evolution": "Starting state - vigilant for potential threats",
+      "context": "Maintaining defensive readiness while supporting scientific mission"
+    }
+  ],
+  "action_log": [],
+  "next_event_setup": {
+    "trigger": "Long-range sensors detect an artificial object approaching - humanity's first confirmed alien vessel",
+    "stakes": "First contact with alien civilization - potential for historic breakthrough or catastrophic misunderstanding", 
+    "complexity": "medium"
+  },
+  "timestamp": "2025-08-01T00:00:00Z"
+}
