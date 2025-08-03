@@ -99,87 +99,86 @@ Yes, creating a schema for training-specific parameters is an excellent idea. Th
 
 ## Execution Plan
 
-I'll create a comprehensive plan for implementing the training scenario generation  
-system:  
+I'll create a comprehensive plan for implementing the training scenario generation system:  
     
 1. Create Training Conditions Schema (schemas/training-conditions.json)   
     
-This schema will define flexible parameters for inverse prompting, without making them strict requirements:    
+    This schema will define flexible parameters for inverse prompting, without making them strict requirements:    
 
-```json
-{
-  "training_objectives": {
-    "primary": "Main learning goal",
-    "secondary": ["Supporting objectives"],
-    "competencies": ["Skills to develop/assess"]
-  },
-  "operational_domain": "Crisis response/Peacekeeping/etc",
-  "environmental_context": {
-    "setting": "Urban/Rural/Maritime/etc",
-    "constraints": ["Time pressure", "Resource limits", etc],
-    "complications": ["Weather", "Civilian presence", etc]
-  },
-  "team_composition": {
-    "roles": ["Leader", "Specialist", etc],
-    "experience_levels": "Mixed/Veteran/Novice",
-    "interpersonal_dynamics": "Cohesive/Friction/Unknown"
-  },
-  "decision_points": {
-    "critical_choices": ["Key decisions to embed"],
-    "ethical_dilemmas": ["Moral challenges"],
-    "resource_tradeoffs": ["Competing priorities"]
-  },
-  "success_criteria": {
-    "mission_objectives": ["What constitutes success"],
-    "failure_conditions": ["What to avoid"],
-    "partial_success": ["Acceptable compromises"]
-  },
-  "assessment_focus": {
-    "individual_performance": ["Leadership", "Decision-making"],
-    "team_dynamics": ["Communication", "Coordination"],
-    "adaptability": ["Response to surprises"]
-  }
-}
-```
+    ```json
+    {
+      "training_objectives": {
+        "primary": "Main learning goal",
+        "secondary": ["Supporting objectives"],
+        "competencies": ["Skills to develop/assess"]
+      },
+      "operational_domain": "Crisis response/Peacekeeping/etc",
+      "environmental_context": {
+        "setting": "Urban/Rural/Maritime/etc",
+        "constraints": ["Time pressure", "Resource limits", etc],
+        "complications": ["Weather", "Civilian presence", etc]
+      },
+      "team_composition": {
+        "roles": ["Leader", "Specialist", etc],
+        "experience_levels": "Mixed/Veteran/Novice",
+        "interpersonal_dynamics": "Cohesive/Friction/Unknown"
+      },
+      "decision_points": {
+        "critical_choices": ["Key decisions to embed"],
+        "ethical_dilemmas": ["Moral challenges"],
+        "resource_tradeoffs": ["Competing priorities"]
+      },
+      "success_criteria": {
+        "mission_objectives": ["What constitutes success"],
+        "failure_conditions": ["What to avoid"],
+        "partial_success": ["Acceptable compromises"]
+      },
+      "assessment_focus": {
+        "individual_performance": ["Leadership", "Decision-making"],
+        "team_dynamics": ["Communication", "Coordination"],
+        "adaptability": ["Response to surprises"]
+      }
+    }
+    ```
 
 2. Create Training Scenario Generation Prompt    
 (prompts/generate-training-scenario.md)
     
-The prompt will have two execution modes:   
-    
-Mode 1: Conditions Provided  
-    
-- Accept flexible training conditions description
-- Map training objectives to RPG mechanics  
-- Generate scenario that embeds training value   
-- Allow creative interpretation of conditions    
-    
-Mode 2: Inverse Prompting    
-    
-- Use training-conditions schema as a guide 
-- Ask open-ended questions about training goals  
-- Build conditions iteratively through conversation   
-- Only require what the user wants to specify    
+    The prompt will have two execution modes:   
+        
+    Mode 1: Conditions Provided  
+        
+    - Accept flexible training conditions description
+    - Map training objectives to RPG mechanics  
+    - Generate scenario that embeds training value   
+    - Allow creative interpretation of conditions    
+        
+    Mode 2: Inverse Prompting    
+        
+    - Use training-conditions schema as a guide 
+    - Ask open-ended questions about training goals  
+    - Build conditions iteratively through conversation   
+    - Only require what the user wants to specify    
     
 3. Key Features of the Training Prompt 
     
-- Flexible Parameter Interpretation: Unlike other prompts, won't require all parameters    
-- Training-to-RPG Mapping: Automatically translate training concepts to adventure mechanics
-- Scenario Optimization: Generate narratives that naturally create desired decision points   
-- Assessment Integration: Build in moments that reveal competencies  
-- After-Action Potential: Structure events to enable meaningful debriefs  
+    - Flexible Parameter Interpretation: Unlike other prompts, won't require all parameters    
+    - Training-to-RPG Mapping: Automatically translate training concepts to adventure mechanics
+    - Scenario Optimization: Generate narratives that naturally create desired decision points   
+    - Assessment Integration: Build in moments that reveal competencies  
+    - After-Action Potential: Structure events to enable meaningful debriefs  
     
 4. Implementation Details    
     
-The prompt will:   
-1. Check if conditions are provided    
-2. If yes: Parse conditions flexibly and generate scenario 
-3. If no: Begin conversational parameter gathering using schema as guide  
-4. Map training objectives to RPG elements  
-5. Generate standard scenario.json with training-optimized parameters
-6. Add training-specific metadata for later analysis  
-    
-This approach maintains full compatibility with the existing system while adding a specialized generation path for training-valuable scenarios.
+    The prompt will:   
+    1. Check if conditions are provided    
+    2. If yes: Parse conditions flexibly and generate scenario 
+    3. If no: Begin conversational parameter gathering using schema as guide  
+    4. Map training objectives to RPG elements  
+    5. Generate standard scenario.json with training-optimized parameters
+    6. Add training-specific metadata for later analysis  
+        
+    This approach maintains full compatibility with the existing system while adding a specialized generation path for training-valuable scenarios.
 
 ## Scenario Generation
 
@@ -227,10 +226,10 @@ Executed in Normal mode:
 Prompt: prompts/generate-adventure.md
 Scenario: scenarios/operation-underground-extraction.json
 
-Generated Adventure: [`adventures/operation-underground-20250803](../adventures/operation-underground-20250803/).
+Generated Adventure: [`adventures/operation-underground-20250803`](../adventures/operation-underground-20250803/).
 
 ## Subagent Generation
 
 Read adventures/operation-underground-20250803/prompts/simulate-adventure.md. I only want to execute Phase 1: Character Subagent Setup to generate the subagents. This way, I can reload Claude Code and run the simulation with the subagent profiles present.
 
-Generated Subagents: [`.claude/agents/runtime/operation-underground-20250803](../.claude/agents/runtime/operation-underground-20250803/)
+Generated Subagents: [`.claude/agents/runtime/operation-underground-20250803`](../.claude/agents/runtime/operation-underground-20250803/)
