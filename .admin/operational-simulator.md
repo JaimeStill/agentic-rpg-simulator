@@ -2,7 +2,7 @@
 
 ![subagent-execution](./assets/subagent-execution.png)
 
-This is an extension to the simulation infrastructure that I wanted to play Sunday morning. Capturing the details here for future reference. I'm imagining a scenario where we have a functional [intelligent-operations-platform](./intelligent-operations-platform.md) and we can conduct simulations with as much real-world data as possible, and being able to dynamically generate simulations from scenarios that can present many alternate paths and strategies.
+This is an extension to the simulation infrastructure that I wanted to play with Sunday morning. Capturing the details here for future reference. I'm imagining a scenario where we have a functional [intelligent-operations-platform](./intelligent-operations-platform.md) and we can conduct simulations with as much real-world data as possible, and being able to dynamically generate simulations from scenarios that can present many alternate paths and strategies.
 
 ## Planning
 
