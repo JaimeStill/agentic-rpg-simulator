@@ -1,4 +1,4 @@
-# Summarize Adventure: Thai Romance Healing
+# Summarize Adventure: Operation Underground Extraction
 
 Provide a concise summary of the adventure's progress.
 

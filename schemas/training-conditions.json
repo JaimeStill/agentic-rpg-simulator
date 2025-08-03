@@ -1,0 +1,352 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Training Scenario Conditions",
+  "description": "Flexible parameters for generating training-oriented RPG scenarios. These are guidelines for inverse prompting, not strict requirements.",
+  "type": "object",
+  "properties": {
+    "training_objectives": {
+      "type": "object",
+      "description": "Learning goals and competencies to develop",
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Main training goal or learning outcome",
+          "examples": [
+            "Decision-making under pressure",
+            "Resource allocation in crisis",
+            "Leadership in ambiguous situations",
+            "Team coordination during emergencies"
+          ]
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supporting objectives that reinforce primary goal",
+          "examples": [
+            "Communication skills",
+            "Ethical decision-making",
+            "Situational awareness",
+            "Stress management"
+          ]
+        },
+        "competencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific skills or behaviors to assess/develop",
+          "examples": [
+            "Strategic thinking",
+            "Tactical planning",
+            "Negotiation",
+            "Risk assessment",
+            "Cultural sensitivity"
+          ]
+        }
+      }
+    },
+    "operational_domain": {
+      "type": "string",
+      "description": "Type of operation or mission context",
+      "examples": [
+        "Humanitarian assistance",
+        "Peacekeeping operations",
+        "Disaster response",
+        "Crisis management",
+        "Security operations",
+        "Civil affairs",
+        "Medical emergency response",
+        "Search and rescue"
+      ]
+    },
+    "environmental_context": {
+      "type": "object",
+      "description": "Physical and situational environment",
+      "properties": {
+        "setting": {
+          "type": "string",
+          "description": "Geographic or operational environment",
+          "examples": [
+            "Urban metropolis",
+            "Rural village",
+            "Maritime environment",
+            "Mountain terrain",
+            "Desert region",
+            "Arctic conditions",
+            "Tropical climate",
+            "Industrial complex"
+          ]
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Limiting factors that increase complexity",
+          "examples": [
+            "Limited time window",
+            "Resource scarcity",
+            "Communication blackout",
+            "Extreme weather",
+            "Political restrictions",
+            "Media scrutiny",
+            "Language barriers"
+          ]
+        },
+        "complications": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Additional factors that create challenges",
+          "examples": [
+            "Civilian population at risk",
+            "Unclear chain of command",
+            "Conflicting intelligence",
+            "Cultural misunderstandings",
+            "Equipment failures",
+            "Unexpected opposition",
+            "Information warfare"
+          ]
+        }
+      }
+    },
+    "team_composition": {
+      "type": "object",
+      "description": "Structure and dynamics of the training team",
+      "properties": {
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Key positions within the team",
+          "examples": [
+            "Team leader",
+            "Operations specialist",
+            "Intelligence analyst",
+            "Medical officer",
+            "Communications expert",
+            "Cultural advisor",
+            "Logistics coordinator",
+            "Security specialist"
+          ]
+        },
+        "experience_levels": {
+          "type": "string",
+          "description": "Overall team experience profile",
+          "examples": [
+            "All veterans",
+            "Mixed experience",
+            "Mostly novice",
+            "Senior leadership with junior team",
+            "Cross-functional expertise"
+          ]
+        },
+        "interpersonal_dynamics": {
+          "type": "string",
+          "description": "Pre-existing team relationships",
+          "examples": [
+            "Well-established unit",
+            "Newly formed team",
+            "Inter-agency cooperation",
+            "Multinational force",
+            "Civilian-military partnership"
+          ]
+        }
+      }
+    },
+    "decision_points": {
+      "type": "object",
+      "description": "Critical moments requiring judgment",
+      "properties": {
+        "critical_choices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Key decisions that shape outcomes",
+          "examples": [
+            "Prioritize saving lives vs. mission objectives",
+            "Trust uncertain intelligence or wait for confirmation",
+            "Engage with force or attempt negotiation",
+            "Follow orders or adapt to ground truth",
+            "Allocate scarce resources between competing needs"
+          ]
+        },
+        "ethical_dilemmas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Moral challenges without clear answers",
+          "examples": [
+            "Collateral damage considerations",
+            "Loyalty conflicts",
+            "Truth vs. operational security",
+            "Individual vs. collective good",
+            "Short-term vs. long-term consequences"
+          ]
+        },
+        "resource_tradeoffs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Competing priorities for limited assets",
+          "examples": [
+            "Speed vs. safety",
+            "Coverage vs. concentration",
+            "Current needs vs. future preparedness",
+            "Local vs. strategic objectives",
+            "Information gathering vs. immediate action"
+          ]
+        }
+      }
+    },
+    "success_criteria": {
+      "type": "object",
+      "description": "Defining mission accomplishment",
+      "properties": {
+        "mission_objectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Primary goals that constitute success",
+          "examples": [
+            "Evacuate all civilians safely",
+            "Establish sustainable peace agreement",
+            "Restore essential services",
+            "Prevent escalation of conflict",
+            "Build trust with local population"
+          ]
+        },
+        "failure_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Outcomes that represent mission failure",
+          "examples": [
+            "Civilian casualties",
+            "Loss of strategic assets",
+            "International incident",
+            "Team compromise",
+            "Humanitarian crisis"
+          ]
+        },
+        "partial_success": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Acceptable compromises or mixed outcomes",
+          "examples": [
+            "Most objectives met with minor setbacks",
+            "Mission accomplished with relationship damage",
+            "Technical success but strategic complications",
+            "Lives saved but resources depleted",
+            "Short-term stability achieved"
+          ]
+        }
+      }
+    },
+    "assessment_focus": {
+      "type": "object",
+      "description": "Areas to evaluate during/after scenario",
+      "properties": {
+        "individual_performance": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Personal competencies to assess",
+          "examples": [
+            "Leadership under stress",
+            "Decision-making quality",
+            "Communication effectiveness",
+            "Initiative and adaptability",
+            "Technical proficiency"
+          ]
+        },
+        "team_dynamics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Group behaviors and interactions",
+          "examples": [
+            "Information sharing",
+            "Coordination efficiency",
+            "Conflict resolution",
+            "Mutual support",
+            "Role clarity"
+          ]
+        },
+        "adaptability": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Response to unexpected changes",
+          "examples": [
+            "Flexibility in planning",
+            "Creative problem-solving",
+            "Rapid reassessment",
+            "Learning from mistakes",
+            "Innovative resource use"
+          ]
+        }
+      }
+    },
+    "scenario_progression": {
+      "type": "object",
+      "description": "How the training scenario should evolve",
+      "properties": {
+        "escalation_pattern": {
+          "type": "string",
+          "description": "How challenges increase over time",
+          "examples": [
+            "Gradual complexity increase",
+            "Sudden crisis escalation",
+            "Cyclic calm and storm",
+            "Cascading failures",
+            "Time pressure intensification"
+          ]
+        },
+        "surprise_elements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Unexpected developments to test adaptability",
+          "examples": [
+            "Intelligence reversal",
+            "Resource loss",
+            "New stakeholder emergence",
+            "Environmental hazard",
+            "Technology failure"
+          ]
+        },
+        "feedback_opportunities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Natural points for learning reinforcement",
+          "examples": [
+            "After major decisions",
+            "Following team conflicts",
+            "Post-crisis resolution",
+            "During planning phases",
+            "After resource allocation"
+          ]
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

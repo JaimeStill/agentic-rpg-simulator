@@ -1,0 +1,82 @@
+{
+  "event_number": 1,
+  "world_state": {
+    "location": "50 meters inside tunnel network - main passage with multiple branch points ahead",
+    "active_elements": [
+      "Electronic countermeasures active for 6 more minutes",
+      "Dust storm providing external concealment",
+      "Motion sensors deployed at 20-meter intervals",
+      "Three distinct air currents indicating complex tunnel structure",
+      "Recent foot traffic patterns detected"
+    ],
+    "resources": [
+      "Full team equipment operational",
+      "Drone overwatch maintained above ground",
+      "Breaching charges prepared for multiple entries",
+      "Medical kit configured for confined spaces",
+      "Communication relay established"
+    ],
+    "time_pressure": "8 minutes until sunrise deadline - hostages will be moved deeper"
+  },
+  "character_states": [
+    {
+      "id": "character-rafael-torres",
+      "name": "Master Sergeant Rafael Torres",
+      "status": "Peak physical condition, leading team formation",
+      "evolution": "Leading first major operation as team commander, demonstrating tactical decisiveness under extreme time pressure",
+      "context": "Successfully coordinated silent entry, maintaining zero-casualty focus"
+    },
+    {
+      "id": "character-yuki-nakamura",
+      "name": "Staff Sergeant Yuki Nakamura",
+      "status": "Excellent condition, confidence building in field role",
+      "evolution": "Confidence building as tech skills prove field-effective in high-stakes infiltration",
+      "context": "Tech skills successfully enabled team entry, proving field capabilities"
+    },
+    {
+      "id": "character-dmitri-volkov",
+      "name": "Sergeant First Class Dmitri Volkov",
+      "status": "Strong condition, gaining team acceptance",
+      "evolution": "Team acceptance growing after demonstrating surgical explosive precision over brute force",
+      "context": "Prepared for surgical breaching operations, proving precision approach"
+    },
+    {
+      "id": "character-amara-okonkwo",
+      "name": "Staff Sergeant Amara Okonkwo",
+      "status": "Optimal condition, medical overwatch ready",
+      "evolution": "Returned from aid mission in Guatemala, understands cartel impact",
+      "context": "Medical preparation complete, balancing combat and humanitarian priorities"
+    },
+    {
+      "id": "character-jackson-cooper",
+      "name": "Sergeant Jackson Cooper",
+      "status": "Peak conditioning, adapting to close-quarters",
+      "evolution": "Successfully adapting precision skills to close-quarters coordination, building team integration",
+      "context": "Silent sentry elimination successful, adapting sniper skills to tunnel environment"
+    },
+    {
+      "id": "character-kai-reeves",
+      "name": "Specialist Kai Reeves",
+      "status": "Excellent, environmental awareness active",
+      "evolution": "Team beginning to appreciate unconventional tracking methods and environmental awareness",
+      "context": "Environmental reading revealed tunnel structure, traditional methods proving valuable"
+    }
+  ],
+  "action_log": [
+    {
+      "event": 1,
+      "summary": "Team DELTA-7 executed perfect silent infiltration of tunnel network. Coordinated sentry elimination, electronic countermeasures, and initial penetration achieved with zero alerts raised.",
+      "consequences": [
+        "Tunnel entrance secured undetected",
+        "Electronic alarm grid disabled for 8-minute window", 
+        "Team cohesion strengthened through successful coordination",
+        "Individual character confidence building in specialized roles"
+      ]
+    }
+  ],
+  "next_event_setup": {
+    "trigger": "Team encounters first major branch point requiring tactical decision on search pattern",
+    "stakes": "Multiple hostage locations unknown, time pressure increasing, complex tunnel structure ahead",
+    "complexity": "high"
+  }
+}

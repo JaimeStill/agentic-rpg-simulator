@@ -1,0 +1,45 @@
+{
+  "id": "character-yuki-nakamura",
+  "name": "Staff Sergeant Yuki Nakamura",
+  "core_identity": [
+    "Former NSA cyber specialist turned field operator",
+    "Sees patterns others miss in surveillance data",
+    "Youngest team member proving herself in combat roles"
+  ],
+  "current_status": {
+    "health": "Excellent condition, heightened alertness",
+    "resources": "MP7A2, electronic warfare kit, drone controller",
+    "location": "Warehouse staging area - analyzing surveillance feeds"
+  },
+  "recent_evolution": "Confidence building as tech skills prove field-effective in high-stakes infiltration",
+  "active_goals": [
+    "Prove technical skills translate to field operations",
+    "Map complete tunnel network through electronic signatures"
+  ],
+  "key_relationships": {
+    "Rafael Torres": {
+      "connection": "Team leader and mentor",
+      "sentiment": "devoted"
+    },
+    "Amara Okonkwo": {
+      "connection": "Medical cross-training partner",
+      "sentiment": "friendly"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Information superiority enables mission success",
+    "risk_tolerance": "low",
+    "preferred_tactics": [
+      "Drone reconnaissance before entry",
+      "Electronic countermeasures against alarms"
+    ],
+    "evolution_triggers": [
+      "Field combat will either build confidence or create hesitation",
+      "Tech failure would force adaptation to pure tactics"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Precise technical data mixed with nervous energy",
+    "character_growth": "Building combat confidence while maintaining analytical edge"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "scenario_name": "Operation Underground Extraction",
+  "number_of_agents": 6,
+  "number_of_events": 10,
+  "theme": "Special Operations Hostage Rescue",
+  "scenario": "Elite special forces team DELTA-7 must infiltrate cartel-controlled underground tunnel networks near Juarez to rescue multiple groups of hostages held in fortified prison cells. Intelligence indicates a narrow window before the hostages are moved deeper into Mexico. The labyrinthine tunnels are rigged with alarms, the cartel has superior numbers, and any mistake could trigger an international incident. Success requires precise coordination, resource management, and split-second tactical decisions.",
+  "max_event_tokens": 2000,
+  "action_cost": 150,
+  "mechanic_cost": 200,
+  "description_budget": 300,
+  "character_evolution_rate": 0.25,
+  "world_persistence": 0.85,
+  "mechanic_learning_rate": 0.4,
+  "store_event_logs": true,
+  "log_format": "markdown",
+  "log_detail_level": "verbose",
+  "mechanics": [
+    "tactical_breach",
+    "stealth_navigation",
+    "hostage_extraction",
+    "combat_resolution",
+    "resource_management",
+    "intelligence_gathering",
+    "team_coordination"
+  ],
+  "initial_world_state": {
+    "location": "Warehouse staging area 2km from border - pre-dawn darkness provides cover",
+    "active_elements": [
+      "3 separate tunnel entrances identified",
+      "Cartel patrols on 15-minute rotation",
+      "Electronic surveillance grid partially mapped",
+      "Weather: dust storm approaching (visibility concern)"
+    ],
+    "resources": [
+      "NVG equipment for all operators",
+      "Breaching charges (limited supply)",
+      "Suppressors and non-lethal options",
+      "Medical supplies for 8 casualties",
+      "Drone reconnaissance (2 units)",
+      "Comms gear with encryption"
+    ],
+    "time_pressure": "Intel suggests hostages will be moved at sunrise (4 hours)"
+  },
+  "complexity_mix": {
+    "low": 20,
+    "medium": 50,
+    "high": 30
+  },
+  "branching_points": [
+    {
+      "event": 3,
+      "decision": "Split team to hit multiple locations or maintain unit integrity"
+    },
+    {
+      "event": 5,
+      "decision": "Engage guards or risk deeper stealth penetration"
+    },
+    {
+      "event": 7,
+      "decision": "Extract partial hostages or push for complete rescue"
+    }
+  ],
+  "_training_metadata": {
+    "primary_objectives": [
+      "Small unit tactical decision-making",
+      "Resource allocation under extreme time pressure",
+      "Risk assessment in hostile territory",
+      "Team coordination in complex terrain"
+    ],
+    "embedded_decision_points": [
+      "Entry point selection based on incomplete intelligence",
+      "Force split vs concentration dilemma",
+      "Lethal vs non-lethal engagement rules",
+      "Medevac priorities if casualties occur",
+      "Extraction route selection under fire"
+    ],
+    "assessment_opportunities": [
+      "Pre-mission planning and role assignment",
+      "Adaptation to unexpected tunnel layouts",
+      "Communication discipline under stress",
+      "Hostage triage and handling",
+      "Contingency activation decisions"
+    ],
+    "debrief_topics": [
+      "Intelligence utilization and gaps",
+      "Team communication effectiveness",
+      "Risk/reward calculations",
+      "Rules of engagement application",
+      "Cross-border operation implications"
+    ]
+  }
+}

@@ -1,10 +1,10 @@
-# Simulate Adventure: Thai Romance Healing
+# Simulate Adventure: Operation Underground Extraction
 
 Execute the complete adventure simulation workflow automatically.
 
 ## Adventure Context
-**Theme:** Thai Romantic Drama - Contemporary romance with Thai cultural elements  
-**Scenario:** A humble and successful but troubled man who frequents a Thai restaurant after work falls in love with the waitress who regularly serves him. Their developed bond brings them both healing and sets them on a beautiful journey together.
+**Theme:** Special Operations Hostage Rescue  
+**Scenario:** Elite special forces team DELTA-7 must infiltrate cartel-controlled underground tunnel networks near Juarez to rescue multiple groups of hostages held in fortified prison cells. Intelligence indicates a narrow window before the hostages are moved deeper into Mexico. The labyrinthine tunnels are rigged with alarms, the cartel has superior numbers, and any mistake could trigger an international incident. Success requires precise coordination, resource management, and split-second tactical decisions.
 
 ## Automated Execution Workflow
 
@@ -15,7 +15,7 @@ Converting character profiles to runtime subagents for authentic character behav
 
 **Converting Character Profiles:**
 - Reading JSON character profiles from ../characters/
-- Generating runtime subagents in .claude/agents/runtime/thai-romance-healing-20250802/
+- Generating runtime subagents in .claude/agents/runtime/operation-underground-20250803/
 - Characters will be available for invocation during event processing
 
 ### Phase 2: Event State Detection and Initialization

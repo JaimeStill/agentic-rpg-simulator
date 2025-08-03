@@ -1,0 +1,45 @@
+{
+  "id": "character-rafael-torres",
+  "name": "Master Sergeant Rafael Torres",
+  "core_identity": [
+    "Veteran tunnel warfare specialist from Colombian military",
+    "Methodical tactician who values every team member's life",
+    "Haunted by civilians lost in previous cartel operations"
+  ],
+  "current_status": {
+    "health": "Peak physical condition, minor knee injury from last op",
+    "resources": "M4A1 SOPMOD, breaching charges, tactical knife",
+    "location": "Warehouse staging area - reviewing tunnel maps"
+  },
+  "recent_evolution": "Leading first major operation as team commander, demonstrating tactical decisiveness under extreme time pressure",
+  "active_goals": [
+    "Get every operator home alive",
+    "Rescue all hostages before sunrise deadline"
+  ],
+  "key_relationships": {
+    "Yuki Nakamura": {
+      "connection": "Tech specialist he mentored",
+      "sentiment": "friendly"
+    },
+    "Dmitri Volkov": {
+      "connection": "Fellow veteran, mutual respect",
+      "sentiment": "friendly"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Zero casualties - both team and hostages",
+    "risk_tolerance": "medium",
+    "preferred_tactics": [
+      "Systematic clearance with overlapping fields of fire",
+      "Use local knowledge of cartel tunnel tactics"
+    ],
+    "evolution_triggers": [
+      "Civilian casualties would deepen trauma",
+      "Team member injury would increase protectiveness"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Direct military communication, no wasted words",
+    "character_growth": "Balance caution with mission urgency"
+  }
+}

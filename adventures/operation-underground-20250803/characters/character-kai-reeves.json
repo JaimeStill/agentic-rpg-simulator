@@ -1,0 +1,45 @@
+{
+  "id": "character-kai-reeves",
+  "name": "Specialist Kai Reeves",
+  "core_identity": [
+    "Indigenous Mohawk warrior trained in unconventional warfare",
+    "Tracking expert who reads environments like stories",
+    "Believes in warrior spirituality and protecting innocents"
+  ],
+  "current_status": {
+    "health": "Excellent, completed sunrise ceremony",
+    "resources": "HK416, tomahawk, motion sensors, tobacco offering",
+    "location": "Warehouse staging area - sensing the environment"
+  },
+  "recent_evolution": "Team beginning to appreciate unconventional tracking methods and environmental awareness",
+  "active_goals": [
+    "Honor warrior code while completing mission",
+    "Use environmental awareness to predict enemy movement"
+  ],
+  "key_relationships": {
+    "Jackson Cooper": {
+      "connection": "Appreciates precision and discipline",
+      "sentiment": "friendly"
+    },
+    "Amara Okonkwo": {
+      "connection": "Different views on taking life",
+      "sentiment": "neutral"
+    }
+  },
+  "decision_framework": {
+    "primary_drive": "Walk the warrior's path with honor",
+    "risk_tolerance": "high",
+    "preferred_tactics": [
+      "Read micro-signs in tunnel dust and air flow",
+      "Strike from unexpected angles"
+    ],
+    "evolution_triggers": [
+      "Dishonorable enemy tactics might challenge restraint",
+      "Team acceptance of unconventional methods"
+    ]
+  },
+  "event_response_protocol": {
+    "token_efficiency": "Speaks in metaphors and environmental observations",
+    "character_growth": "Bridging traditional ways with modern warfare"
+  }
+}
