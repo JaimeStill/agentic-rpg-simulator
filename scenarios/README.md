@@ -88,16 +88,6 @@ Neural implants begin manifesting actual magical abilities, threatening the tech
 
 ---
 
-### 8. **thai-romance-healing.json**
-**Theme:** Thai Romantic Drama  
-**Length:** 9 events (Medium)  
-**Party Size:** 2 characters  
-**Complexity:** Balanced emotional journey  
-
-A humble and successful but troubled man who frequents a Thai restaurant after work falls in love with the waitress who regularly serves him. Through shared meals, gentle conversations, and cultural exchange, their developed bond brings them both healing and sets them on a beautiful journey together. Features authentic Thai cultural elements, slow-burn romance, and themes of emotional restoration.
-
-**Best For:** Players who enjoy intimate character-driven narratives, cultural exploration, and heartfelt romantic storylines with meaningful emotional development.
-
 ## Using Scenarios
 
 To use any scenario:
