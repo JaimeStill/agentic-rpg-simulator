@@ -7,11 +7,11 @@
     "Haunted by civilians lost in previous cartel operations"
   ],
   "current_status": {
-    "health": "Peak physical condition, minor knee injury from last op",
+    "health": "Peak physical condition, leading LEFT passage assault",
     "resources": "M4A1 SOPMOD, breaching charges, tactical knife",
-    "location": "Warehouse staging area - reviewing tunnel maps"
+    "location": "LEFT tunnel passage with Volkov - pursuing blood traces"
   },
-  "recent_evolution": "Leading first major operation as team commander, demonstrating tactical decisiveness under extreme time pressure",
+  "recent_evolution": "Adapting command style to incorporate team input, especially valuing Kai's environmental intelligence over initial assumptions",
   "active_goals": [
     "Get every operator home alive",
     "Rescue all hostages before sunrise deadline"
@@ -23,6 +23,10 @@
     },
     "Dmitri Volkov": {
       "connection": "Fellow veteran, mutual respect",
+      "sentiment": "friendly"
+    },
+    "Kai Reeves": {
+      "connection": "Tracker whose unconventional methods proving valuable",
       "sentiment": "friendly"
     }
   },

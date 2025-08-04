@@ -1,0 +1,92 @@
+{
+  "event_number": 2,
+  "world_state": {
+    "location": "Triple junction in tunnel network - team split across three passages",
+    "active_elements": [
+      "Electronic countermeasures active for 5 more minutes",
+      "Guard shift change at RIGHT checkpoint in 3 minutes",
+      "Motion sensors active in CENTER passage",
+      "Explosive rigging detected on CENTER support beams",
+      "Blood traces and voices detected in LEFT passage"
+    ],
+    "resources": [
+      "Full team equipment operational",
+      "Drone overwatch maintained above ground",
+      "Breaching charges prepared",
+      "Medical kit ready for casualties",
+      "Communication relay active despite team split"
+    ],
+    "time_pressure": "5 minutes until sunrise deadline - critical phase"
+  },
+  "character_states": [
+    {
+      "id": "character-rafael-torres",
+      "name": "Master Sergeant Rafael Torres",
+      "status": "Peak condition, leading LEFT passage with Volkov",
+      "evolution": "Adapting command style to incorporate team input, especially valuing Kai's environmental intelligence over initial assumptions",
+      "context": "Made decisive split-team decision, pursuing blood traces in LEFT passage"
+    },
+    {
+      "id": "character-yuki-nakamura",
+      "name": "Staff Sergeant Yuki Nakamura",
+      "status": "Focused concentration, solo infiltration of CENTER passage",
+      "evolution": "Solo technical infiltration mission validating full field operator status - no longer just 'the tech specialist'",
+      "context": "Accepted solo mission to disable sensors and access power grid"
+    },
+    {
+      "id": "character-dmitri-volkov",
+      "name": "Sergeant First Class Dmitri Volkov",
+      "status": "Combat ready, supporting Torres in LEFT passage",
+      "evolution": "Surgical precision approach continues earning team trust and acceptance",
+      "context": "Providing explosive expertise while maintaining restraint"
+    },
+    {
+      "id": "character-amara-okonkwo",
+      "name": "Staff Sergeant Amara Okonkwo",
+      "status": "Medical priorities engaged, awaiting deployment orders",
+      "evolution": "Balancing immediate medical response with tactical positioning",
+      "context": "Preparing for potential mass casualty situation based on blood traces"
+    },
+    {
+      "id": "character-jackson-cooper",
+      "name": "Sergeant Jackson Cooper",
+      "status": "Overwatch position established, RIGHT passage coverage",
+      "evolution": "Tunnel adaptation complete - finding sniper applications in confined spaces, positioning for checkpoint elimination",
+      "context": "Preparing synchronized takedown during guard shift change"
+    },
+    {
+      "id": "character-kai-reeves",
+      "name": "Specialist Kai Reeves",
+      "status": "Environmental awareness heightened, tactical insight provided",
+      "evolution": "Environmental intelligence proving mission-critical - team actively seeking tracker wisdom over conventional intel",
+      "context": "Identified RIGHT passage as high-value target based on guard patterns"
+    }
+  ],
+  "action_log": [
+    {
+      "event": 1,
+      "summary": "Team DELTA-7 executed perfect silent infiltration of tunnel network. Coordinated sentry elimination, electronic countermeasures, and initial penetration achieved with zero alerts raised.",
+      "consequences": [
+        "Tunnel entrance secured undetected",
+        "Electronic alarm grid disabled for 8-minute window",
+        "Team cohesion strengthened through successful coordination",
+        "Individual character confidence building in specialized roles"
+      ]
+    },
+    {
+      "event": 2,
+      "summary": "At critical junction, Torres split team across three passages based on tactical assessment and Kai's environmental intelligence. Team maintaining coordination despite separation under extreme time pressure.",
+      "consequences": [
+        "Team divided: Torres/Volkov LEFT, Nakamura CENTER solo, Cooper RIGHT overwatch",
+        "Kai's tracking wisdom influenced command decisions",
+        "Characters evolving through increased responsibility",
+        "Multiple simultaneous operations increasing risk/reward"
+      ]
+    }
+  ],
+  "next_event_setup": {
+    "trigger": "Simultaneous breach actions across all three passages as guard shift change creates chaos",
+    "stakes": "First hostage contact imminent, team coordination critical while separated, ECM window closing",
+    "complexity": "high"
+  }
+}

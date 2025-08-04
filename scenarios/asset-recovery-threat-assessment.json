@@ -1,0 +1,107 @@
+{
+  "name": "Asset Recovery - Threat Assessment Training",
+  "theme": "Covert Operations in Denied Territory",
+  "scenario": "A high-value intelligence asset has been compromised and is being held in an enemy-controlled urban district. The team must infiltrate, locate, and extract the asset while navigating incomplete intelligence, civilian populations, communication blackouts, and multiple threat vectors. Success requires constant threat assessment, adaptive planning, and mission-critical decision-making under pressure. The operation window is limited - enemy forces are consolidating their position and the asset's value decreases with every hour of delay.",
+  
+  "number_of_agents": 4,
+  "number_of_events": 10,
+  
+  "agent_creation": {
+    "specializations": [
+      "Team Leader/Tactical Commander - experienced in threat assessment and mission planning",
+      "Intelligence Analyst/Tech Specialist - signals intelligence and digital reconnaissance", 
+      "Combat Medic/Logistics - field medicine and resource management",
+      "Scout/Reconnaissance - terrain analysis and early warning systems"
+    ],
+    "background_theme": "Multi-national special operations unit with complementary skill sets for denied area operations"
+  },
+  
+  "token_economy": {
+    "max_event_tokens": 1800,
+    "action_cost": 120,
+    "mechanic_cost": 180,
+    "description_budget": 250,
+    "complexity_mix": {
+      "low": 20,
+      "medium": 50, 
+      "high": 30
+    }
+  },
+  
+  "world_mechanics": {
+    "threat_assessment": {
+      "intelligence_gathering": "Characters can spend actions to gather incomplete/conflicting intel",
+      "threat_prediction": "Environmental cues and pattern recognition reveal potential dangers",
+      "risk_mitigation": "Proactive measures can reduce threat severity but consume resources"
+    },
+    "resource_constraints": {
+      "limited_equipment": "Finite ammunition, medical supplies, and technical gear",
+      "communication_blackouts": "Intermittent contact with command, no real-time backup",
+      "time_pressure": "Asset value degrades, enemy reinforcements incoming"
+    },
+    "civilian_considerations": {
+      "collateral_damage": "Civilian casualties affect mission success metrics",
+      "human_intelligence": "Local population may provide intel or betray position",
+      "operational_security": "Maintaining cover while operating near non-combatants"
+    }
+  },
+  
+  "character_evolution": {
+    "evolution_rate": 0.7,
+    "key_growth_areas": [
+      "Threat assessment accuracy under pressure",
+      "Adaptive planning when intelligence proves incorrect", 
+      "Team coordination during communication blackouts",
+      "Ethical decision-making with civilian presence",
+      "Resource prioritization in equipment-constrained environment"
+    ]
+  },
+  
+  "world_persistence": {
+    "enabled": true,
+    "consequences_carry_forward": true,
+    "enemy_adaptation": "Opposing forces learn and adapt to team tactics"
+  },
+  
+  "mechanic_learning": {
+    "enabled": true,
+    "opponent_intelligence": "Enemy forces demonstrate tactical evolution"
+  },
+  
+  "store_event_logs": true,
+  "log_format": "markdown",
+  "log_detail_level": "verbose",
+  
+  "_training_metadata": {
+    "primary_objectives": [
+      "Threat prediction and early warning systems",
+      "Adaptive planning with incomplete/false intelligence", 
+      "Mission execution under resource constraints",
+      "Ethical decision-making in complex operational environment",
+      "Team coordination during communication disruption"
+    ],
+    "embedded_decision_points": [
+      "Route selection with incomplete terrain intelligence",
+      "Engagement decisions when civilians are present", 
+      "Resource allocation during extended operations",
+      "Information sharing when communications are compromised",
+      "Mission modification when initial intelligence proves incorrect",
+      "Extraction method selection under multiple threat vectors"
+    ],
+    "assessment_opportunities": [
+      "Threat assessment accuracy vs actual encountered dangers",
+      "Team coordination effectiveness during communication blackouts", 
+      "Resource management efficiency throughout operation",
+      "Civilian casualty minimization while maintaining mission focus",
+      "Adaptive planning speed when situations change rapidly"
+    ],
+    "debrief_topics": [
+      "Intelligence analysis process and accuracy improvement",
+      "Communication protocol effectiveness during blackouts",
+      "Resource allocation decision-making under constraint",
+      "Threat prediction methods and early warning systems",
+      "Ethical considerations in high-stakes operations",
+      "Team coordination strategies for denied area operations"
+    ]
+  }
+}
