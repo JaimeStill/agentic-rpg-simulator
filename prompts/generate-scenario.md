@@ -137,17 +137,17 @@ If you have not yet prompted the user for missing parameters, you MUST:
 
 ### Example: Correct Partial Parameter Handling
 
-User Input: "Theme: Thai Romantic Drama, Agents: 3, Events: 9, Scenario: Two women compete..."
+User Input: "Theme: Cyberpunk, Agents: 3, Events: 9, Scenario: Elite crew hired to steal experimental..."
 
 REQUIRED RESPONSE:
 ```
 Analyzing provided parameters...
 
 Found the following:
-- Theme: Thai Romantic Drama  
-- Number of Agents: 3
-- Number of Events: 9
-- Scenario: Two women compete for the affection of a successful bachelor. He is a good person who loves them both and cannot decide who to pick. He doesn't want anyone to get hurt. They discover it's possible for the bonds of love to extend between 3 people.
+- Theme: Cyberpunk  
+- Number of Agents: 4
+- Number of Events: 10
+- Scenario: Elite crew hired to steal experimental neural implants from Nexus Corp's quantum-encrypted vault. The implants grant superhuman cognition but may have hidden purposes. Double-crosses expected.
 
 I need to gather the following missing parameters:
 - Token management settings (max_event_tokens, action_cost, mechanic_cost, description_budget)
@@ -170,7 +170,7 @@ Enter choice (1-5):
 
 FORBIDDEN RESPONSE:
 ```
-I'll create a Thai romantic drama scenario with your parameters and use default values for the rest...
+I'll create a Cyberpunk neural heist scenario with your parameters and use default values for the rest...
 [Proceeds to create file]
 ```
 
